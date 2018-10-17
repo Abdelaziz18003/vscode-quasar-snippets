@@ -8,6 +8,7 @@
         "type": "git",
         "url": "https://github.com/Abdelaziz18003/vscode-quasar-snippets.git"
     },
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.28.0"
     },

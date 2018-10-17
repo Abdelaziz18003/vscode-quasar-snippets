@@ -1,1 +1,73 @@
-{}
+{
+  "QLayout": {
+    "prefix": "qlayout",
+    "body": [
+      "<q-layout view=\"hHr LpR lFf\">$0</q-layout>"
+    ],
+    "description": "Layouts are the elements that wrap page content, like a navigational bar or drawer. Multiple pages can share the same Layout, so the code is reusable, which is one of their key points."
+  },
+  "QLayoutHeader": {
+    "prefix": "qlayoutheader",
+    "body": [
+      "<q-layout-header ${1:reveal} v-model=\"${2:header}\">$0</q-layout-header>"
+    ],
+    "description": "Layout header"
+  },
+  "QLayoutFooter": {
+    "prefix": "qlayoutfooter",
+    "body": [
+      "<q-layout-footer ${1:reveal} v-model=\"${2:footer}\">$0</q-layout-footer>"
+    ],
+    "description": "Layout footer"
+  },
+  "QLayoutDrawer": {
+    "prefix": "qlayoutdrawer",
+    "body": [
+      "<q-layout-drawer side=\"${1:left}\">$0</q-layout-drawer>"
+    ],
+    "description": "Layout drawer"
+  },
+  "QPage": {
+    "prefix": "qpage",
+    "body": [
+      "<q-page :style-fn=\"${1:myTweak}\">$0</q-page>"
+    ],
+    "description": "A component that holds page content"
+  },
+  "QPageSticky": {
+    "prefix": "qpagesticky",
+    "body": [
+      "<q-page-sticky position=\"${1:top-right}\" :offset=\"[${2:18}, ${3:18}]\">",
+      "  <q-btn round color=\"${4:primary}\" @click=\"${5:alert}\" icon=\"${6:alarm}\" />",
+      "</q-page-sticky>"
+    ],
+    "description": "A component that helps in placing DOM elements wrapped by it into a static position within the content area of your Layout, no matter where the user scrolls"
+  },
+  "QFab": {
+    "prefix": "qfab",
+    "body": [
+      "<q-fab color=\"${1:primary}\" icon=\"${2:add}\" direction=\"${3:up}\">",
+      "  <q-fab-action color=\"${4:purple}\" @click=\"${5:someMethod}\" icon=\"${6:mail}\" />",
+      "</q-fab>"
+    ],
+    "description": "A Floating Action Button (FAB) represents the primary action in an App Page. But, it’s not limited to only a single action. It can contain any number of sub-actions too"
+  },
+  "QResizeObservable": {
+    "prefix": "qresizeobservable",
+    "body": [
+      "<div>",
+      "  <q-resize-observable @resize=\"${1:onResize}\" />$0",
+      "</div>"
+    ],
+    "description": "A component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObservable) changes its size"
+  },
+  "QWindowResizeObservable": {
+    "prefix": "qwindowresizeobservable",
+    "body": [
+      "<div>",
+      "  <q-window-resize-observable @resize=\"${1:onResize}\" />$0",
+      "</div>"
+    ],
+    "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
+  }
+}

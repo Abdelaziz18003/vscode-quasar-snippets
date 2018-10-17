@@ -64,10 +64,48 @@
   "QWindowResizeObservable": {
     "prefix": "qwindowresizeobservable",
     "body": [
-      "<div>",
-      "  <q-window-resize-observable @resize=\"${1:onResize}\" />$0",
-      "</div>"
+      "<q-window-resize-observable @resize=\"${1:onResize}\" />$0"
     ],
     "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
+  },
+  "QBtn 1": {
+    "prefix": "qbtn1",
+    "body": [
+      "<q-btn color=\"${1:primary}\" icon=\"${2:check}\" label=\"${3:OK}\" @click=\"${4:onClick}\" />$0"
+    ],
+    "description": "A button with a few extra useful features"
+  },
+  "QBtn 2": {
+    "prefix": "qbtn2",
+    "body": [
+      "<q-btn color=\"${1:primary}\" icon=\"${2:check}\" label=\"${3:OK}\" @click=\"${4:onClick}\">$0</q-btn>"
+    ],
+    "description": "A button with a few extra useful features"
+  },
+  "QBtnGroup": {
+    "prefix": "qbtngroup",
+    "body": [
+      "<q-btn-group>",
+      "  <q-btn label=\"${1:One}\" @click=\"${2:clickHandler1}\"/>",
+      "  <q-btn label=\"${3:Two}\" @click=\"${4:clickHandler2}\"/>",
+      "  <q-btn label=\"${5:Three}\" @click=\"${6:clickHandler3}\"/>",
+      "</q-btn-group>"
+    ],
+    "description": "A group of QBtn components"
+  },
+  "QBtnDropdown": {
+    "prefix": "qbtndropdown",
+    "body": [
+      "<q-btn-dropdown label=\"${1:Button}\">",
+      "  <q-list link>",
+      "    <q-item>",
+      "      <q-item-main>",
+      "        <q-item-tile label>${2:Item}</q-item-tile>",
+      "      </q-item-main>",
+      "    </q-item>",
+      "  </q-list>",
+      "</q-btn-dropdown>"
+    ],
+    "description": "A convenient dropdown button. Goes very well with QList as dropdown content"
   }
 }

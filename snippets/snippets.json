@@ -107,5 +107,192 @@
       "</q-btn-dropdown>"
     ],
     "description": "A convenient dropdown button. Goes very well with QList as dropdown content"
+  },
+  "QField": {
+    "prefix": "qfield",
+    "body": [
+      "<q-field",
+      "  icon=\"${1:cloud}\"",
+      "  label=\"${2:Your Gmail}\"",
+      "  helper=\"${3:Helper}\"",
+      "  :error=\"${4:mailHasError}\"",
+      "  error-label=\"${5:We need a valid email}\"",
+      "  :count=\"${6:10}\"",
+      ">",
+      "  $0",
+      "</q-field>"
+    ],
+    "description": "A component that allows to easily build responsive Forms UI by wrapping each Form component (QInput, QSelect and so on) to enrich it with a main label, an icon, error placeholder and error state, helper placeholder and/or item/character counter."
+  },
+  "QInput": {
+    "prefix": "qinput",
+    "body": [
+      "<q-input v-model=\"${1:text}\" type=\"${2:text}\" float-label=\"${3:Float Label}\" placeholder=\"${4:Gigi}\" />$0"
+    ],
+    "description": "A component that can be used for regular text input, passwords, email addresses, numbers, telephone numbers, urls and auto-growing text areas."
+  },
+  "QChipsInput": {
+    "prefix": "qchipsinput",
+    "body": [
+      "<q-chips-input v-model=\"${1:model}\" float-label=\"${2:Floating Label}\" />"
+    ],
+    "description": "A component that allows user to enter a group of text items, which is also editable in the form of quick deletion of the Chips in the list."
+  },
+  "QColor": {
+    "prefix": "qcolor",
+    "body": [
+      "<q-color v-model=\"${1:modelHex}\" float-label=\"${2:Floating Label}\" />"
+    ],
+    "description": "A component that provides a method to input colors."
+  },
+  "QColorPicker": {
+    "prefix": "qcolorpicker",
+    "body": [
+      "<q-color-picker v-model=\"${1:modelHex}\" float-label=\"${2:Floating Label}\" />"
+    ],
+    "description": "A component that provides a method to input colors."
+  },
+  "QAutocomplete": {
+    "prefix": "qautocomplete",
+    "body": [
+      "<q-autocomplete",
+      "  @search=\"${1:search}\"",
+      "  :min-characters=\"${2:3}\"",
+      "  @selected=\"${3:selected}\"",
+      "/>"
+    ],
+    "description": "A component that binds to the parent textfield (eg. QInput, QSearch, QChipsInput) and offers suggestions to the user, while the user is typing."
+  },
+  "QEditor": {
+    "prefix": "qeditor",
+    "body": [
+      "<q-editor v-model=\"${1:model}\" />$0"
+    ],
+    "description": "A WYSIWYG (“what you see is what you get”) editor component."
+  },
+  "QSearch": {
+    "prefix": "qsearch",
+    "body": [
+      "<q-search v-model=\"${1:search}\" icon=\"${2:place}\" float-label=\"${2:search for a place}\" ${3:clearable} />"
+    ],
+    "description": "A component that offers the user an input field with additional features for searching purposes."
+  },
+  "QSlider": {
+    "prefix": "qslider",
+    "body": [
+      "<q-slider v-model=\"${1:selectedValue}\" :min=\"${2:1}\" :max=\"${3:7}\" :step=\"${4:2}\" />"
+    ],
+    "description": "Slider component is a great way to make the user specify a number value between a minimum and maximum value, with optional steps between valid values"
+  },
+  "QRange": {
+    "prefix": "qrange",
+    "body": [
+      "<q-range v-model=\"${1:rangeValues}\" :min=\"${2:0}\" :max=\"${3:10}\" :step=\"${4:1}\" />"
+    ],
+    "description": "Range component is a great way to offer the user the selection of a sub-range of values between a minimum and maximum value, with optional steps to select those values"
+  },
+  "QRadio": {
+    "prefix": "qradio",
+    "body": [
+      "<q-radio v-model=\"${1:option}\" val=\"${2:opt1}\" label=\"${3:Option 1}\" />"
+    ],
+    "description": "The Quasar Radio component is another basic element for user input. You can use this to supply a way for the user to pick an option from multiple choices."
+  },
+  "QCheckbox": {
+    "prefix": "qcheckbox",
+    "body": [
+      "<q-checkbox v-model=\"${1:selection}\" val=\"${2:one}\" label=\"${3:One}\" />"
+    ],
+    "description": "The Quasar Checkbox component is a basic element to be used for selection or toggling by the user."
+  },
+  "QToggle": {
+    "prefix": "qtoggle",
+    "body": [
+      "<q-toggle v-model=\"${1:selection}\" val=\"${2:one}\" label=\"${3:One}\" />"
+    ],
+    "description": "The Quasar Toggle component is another basic element for user input. You can use this for turning settings, features or true/ false inputs on and off."
+  },
+  "QBtnToggle": {
+    "prefix": "qbtntoggle",
+    "body": [
+      "<q-btn-toggle",
+      "  v-model=\"${1:model}\"",
+      "  toggle-color=\"${2:primary}\"",
+      "  :options=\"[",
+      "    {label: '${3:One}', value: '${4:one}'},",
+      "    {label: '${5:Two}', value: '${6:two}'},",
+      "    {label: '${7:Three}', value: '${8:three}'}",
+      "  ]\"",
+      "/>"
+    ],
+    "description": "The QBtnToggle component is another basic element for user input, similar to QRadio but with buttons. You can use this to supply a way for the user to pick an option from multiple choices."
+  },
+  "QOptionGroup": {
+    "prefix": "qoptiongroup",
+    "body": [
+      "<q-option-group",
+      "  color=\"${1:secondary}\"",
+      "  type=\"${2:checkbox}\"",
+      "  v-model=\"${3:group}\"",
+      "  :options=\"[",
+      "    { label: '${4:Option 1}', value: '${5:op1}' },",
+      "    { label: '${6:Option 2}', value: '${7:op2}' },",
+      "    { label: '${8:Option 3}', value: '${9:op3}' }",
+      "  ]\"",
+      "/>"
+    ],
+    "description": "The Quasar Option Group component is a helper component, which allows you to better control the grouping of binary (as in on or off, true or false, 1 or 0) form input components like checkboxes, radios or toggles."
+  },
+  "QDatetime": {
+    "prefix": "qdatetime",
+    "body": [
+      "<q-datetime v-model=\"${1:model}\" type=\"${2:datetime}\" />"
+    ],
+    "description": "The Datetime component provides a method to input dates and time or both."
+  },
+  "QDatetimePicker": {
+    "prefix": "qdatetimepicker",
+    "body": [
+      "<q-datetime-picker v-model=\"${1:model}\" type=\"${2:datetime}\" />"
+    ],
+    "description": "The DatetimePicker component provides a method to input dates and time or both."
+  },
+  "QSelect": {
+    "prefix": "qselect",
+    "body": [
+      "<q-select",
+      "  v-model=\"${1:select}\"",
+      "  float-label=\"${2:Is Quasar Awesome?}\"",
+      "  ${3:radio}",
+      ":options=\"${4:selectOptions}\"",
+      "/>"
+    ],
+    "description": "Select component has two types of selection: single selection (using Radios or Lists) or multiple selection (using Checkboxes or Toggles). This component opens up a Popover for the selection list and action. A filter can also be used for longer lists."
+  },
+  "QRating": {
+    "prefix": "qrating",
+    "body": [
+      "<q-rating v-model=\"${1:ratingModel}\" :max=\"${2:3}\" />"
+    ],
+    "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
+  },
+  "QKnob": {
+    "prefix": "qknob",
+    "body": [
+      "<q-knob",
+      "  v-model=\"${1:model}\"",
+      "  :min=\"${2:min}\"",
+      "  :max=\"${3:max}\"",
+      "  :placeholder=\"${4:'$ ' + model}\"",
+      "/>"
+    ],
+    "description": "Quasar Knob is another way of making the user select a Number value from a predefined range. With optional steps included."
+  },
+  "QUploader": {
+    "prefix": "quploader",
+    "body": [
+      "<q-uploader :url=\"${1:url}\" />"
+    ],
+    "description": "Quasar supplies a way for you to upload files through QUploader component."
   }
 }

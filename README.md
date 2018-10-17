@@ -1,65 +1,44 @@
-# quasar-snippets README
+# vscode-quasar-snippets
 
-This is the README for your extension "quasar-snippets". After writing up a brief description, we recommend including the following sections.
+Quasar framework is an awesome project isn't it? But, do you find it tedious to remember the basic syntax for all the components it provides. So, this simple plugin is here to help you solving this problem.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This plugin provides snippets with the basic usage syntax for the most used components of quasar-framework (All components soon).
 
-For example if there is an image subfolder under your extension project workspace:
+All you need to do is typing the component's name **all in lowercase** and press tab. (all components will follow this logic).
 
-\!\[feature X\]\(images/feature-x.png\)
+``` html
+qlayout + [tab] => <q-layout view="hHr LpR lFf"></q-layout>
+```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![features demo](images/demo.gif)
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+For components properties, I tried to provide just the essential ones that are needed in most cases. The ones that are not used frequently can be looked up in the documentation. But if you find me missing some important property that is used frequently with a given component, don't hesitate to let me know.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### [0.1.0] - 2018-10-17
 
-### 1.0.0
+Initial release
 
-Initial release of ...
+#### added
 
-### 1.0.1
+- Layout Components
+- Buttons Components
+- Form Components
 
-Fixed issue #.
+## Contribution Guide
 
-### 1.1.0
+This plugin is still in development. Please don't get upset if you don't find a given component and feel free to contribute instead. Your contributions of all sorts are welcome. Here are some guidelines to consider when submitting a contribution.
 
-Added features X, Y, and Z.
+- If you find a bug or you have a suggestion, feel free to open an issue for it.
+- If you want to add a new snippet or fix an existing bug, please open an issue for that (if it is not already open) and indicate that you are working on it to avoid working on the same issue by other developers.
+- Make sure to keep snippets organized according to the official documentation of quasar.
+- Snippet prefix must be the lowercase version of the component's name ex: QProgress => qprogress.
+- Snippet body must include only the most used properties. Component doc "Basic Usage" section is enough in *most* cases.
+- Snippet description can be the doc description of the component if it is small or just a meaningful part of it if it is long.
 
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Again, your contributions of all sorts are welcome :heart:
 
 **Enjoy!**

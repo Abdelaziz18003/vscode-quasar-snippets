@@ -294,5 +294,21 @@
       "<q-uploader :url=\"${1:url}\" />"
     ],
     "description": "Quasar supplies a way for you to upload files through QUploader component."
+  },
+  "QTabs": {
+    "prefix": "qtabs",
+    "body": [
+      "<q-tabs>",
+      "   <q-tab slot=\"${1:slot}\" name=\"${2:name}\" label=\"${3:label}\">$0</q-tab>",
+      "</q-tabs>"
+    ],
+    "description": "Quasar Tabs are a way of displaying more information using less window real estate."
+  },
+  "QTab": {
+    "prefix": "qtab",
+    "body": [
+      "<q-tab slot=\"${1:slot}\" name=\"${2:name}\" label=\"${3:label}\">$0</q-tab>"
+    ],
+    "description": "QTab component is used to define a title for your Tab. Can be linked to a QTabPane through name prop."
   }
 }

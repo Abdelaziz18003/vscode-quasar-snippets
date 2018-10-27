@@ -125,36 +125,36 @@
     "description": "Used to wrap the “title” of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
   },
   "QTabs": {
-	  "prefix": "qtabs",
-	  "body": [
-		  "<q-tabs>",
-		  "  <q-tab slot=\"${1:slot}\" name=\"${2:name}\" label=\"${3:label}\"/>",
-		  "  <q-tab-pane name=\"${1:name}\">$0</q-tab>",
-		  "</q-tabs>"
-	  ],
-	  "description": "Quasar Tabs are a way of displaying more information using less window real estate."
+    "prefix": "qtabs",
+    "body": [
+      "<q-tabs>",
+      "  <q-tab slot=\"${1:slot}\" name=\"${2:name}\" label=\"${3:label}\"/>",
+      "  <q-tab-pane name=\"${1:name}\">$0</q-tab>",
+      "</q-tabs>"
+    ],
+    "description": "Quasar Tabs are a way of displaying more information using less window real estate."
   },
   "QTab": {
-	  "prefix": "qtab",
-	  "body": [
-		  "<q-tab slot=\"${1:slot}\" name=\"${2:name}\" icon=\"${3:icon_name}\" label=\"${4:label}\">$0</q-tab>"
-	  ],
-	  "description": "QTab component is used to define a title for your Tab. Can be linked to a QTabPane through name prop."
+    "prefix": "qtab",
+    "body": [
+      "<q-tab slot=\"${1:slot}\" name=\"${2:name}\" icon=\"${3:icon_name}\" label=\"${4:label}\">$0</q-tab>"
+    ],
+    "description": "QTab component is used to define a title for your Tab. Can be linked to a QTabPane through name prop."
   },
   "QTabPane": {
-		"prefix": "qtabpane",
-		"body": [
-		  "<q-tab-pane name=\"${1:name}\">$0</q-tab-pane>"
-		],
-		"description": "The Tabs Pane component is useful, when the content of each tab is relatively small or simple."
+    "prefix": "qtabpane",
+    "body": [
+      "<q-tab-pane name=\"${1:name}\">$0</q-tab-pane>"
+    ],
+    "description": "The Tabs Pane component is useful, when the content of each tab is relatively small or simple."
   },
   "QRouteTab": {
-		"prefix": "qroutetab",
-		"body": [
-		  "<q-route-tab icon=\"${1:icon_name}\" to=\"${1:route}\" exact slot=\"${2:slot}\"/>"
-		],
-		"description": "You will, in most cases, want to use tabs within a layout component. Below is an example of how this would be done."
-	},
+    "prefix": "qroutetab",
+    "body": [
+      "<q-route-tab icon=\"${1:icon_name}\" to=\"${1:route}\" exact slot=\"${2:slot}\"/>"
+    ],
+    "description": "You will, in most cases, want to use tabs within a layout component. Below is an example of how this would be done."
+  },
   "QField": {
     "prefix": "qfield",
     "body": [

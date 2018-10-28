@@ -180,6 +180,24 @@
     ],
     "description": "This component allows you to display a context menu (popup) instead of the default browser one when user performs a right-click (or long tap on touch capable devices)."
   },
+  "QBreadcrumbs": {
+    "prefix": "qbreadcrumbs",
+    "body": [
+      "<q-breadcrumbs>",
+      "  <q-breadcrumbs-el label=\"${1:Home}\" icon=\"${2:home}\" />",
+      "  <q-breadcrumbs-el label=\"${3:Components}\" icon=\"${4:widgets}\" />",
+      "  <q-breadcrumbs-el label=\"${5:Breadcrumbs}\" icon=\"${6:navigation}\" />",
+      "</q-breadcrumbs>"
+    ],
+    "description": "Quasar Breadcrumbs is a component used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites."
+  },
+  "QPagination": {
+    "prefix": "qpagination",
+    "body": [
+      "<q-pagination v-model=\"${1:page}\" :max=\"${2:6}\" />"
+    ],
+    "description": "The Quasar Pagination component is available for whenever a pagination system is required. It offers the user a simple UI to help you in moving between pages/items."
+  },
   "QField": {
     "prefix": "qfield",
     "body": [

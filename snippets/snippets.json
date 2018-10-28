@@ -155,6 +155,31 @@
     ],
     "description": "You will, in most cases, want to use tabs within a layout component. Below is an example of how this would be done."
   },
+  "QPullToRefresh": {
+    "prefix": "qpulltorefresh",
+    "body": [
+      "<q-pull-to-refresh :handler=\"${1:refresher}\">",
+      "  $0",
+      "</q-pull-to-refresh>"
+    ],
+    "description": "When you want to allow the user to refresh the content or retrieve the newest content."
+  },
+  "QContextMenu": {
+    "prefix": "qcontextmenu",
+    "body": [
+      "<q-context-menu>",
+      "  <q-list link separator style=\"min-width: ${1:150px}; max-height: ${2:300px};\">",
+      "    <q-item v-close-overlay @click.native=\"${3:showToast}()\">",
+      "      <q-item-main label=\"${4:Label}\" sublabel=\"${5:Value}\" />",
+      "    </q-item>",
+      "    <q-item v-close-overlay @click.native=\"${6:showOtherToast}()\">",
+      "      <q-item-main label=\"${7:Other Label}\" sublabel=\"${8:Other Value}\" />",
+      "    </q-item>",
+      "  </q-list>",
+      "</q-context-menu>"
+    ],
+    "description": "This component allows you to display a context menu (popup) instead of the default browser one when user performs a right-click (or long tap on touch capable devices)."
+  },
   "QField": {
     "prefix": "qfield",
     "body": [

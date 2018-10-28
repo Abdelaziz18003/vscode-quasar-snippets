@@ -18,6 +18,14 @@ For components properties, I tried to provide just the essential ones that are n
 
 ## Release Notes
 
+### [0.2.0] - 2018-10-28
+
+Adding Navigation Components
+
+#### added
+
+- Navigation Components
+
 ### [0.1.0] - 2018-10-17
 
 Initial release

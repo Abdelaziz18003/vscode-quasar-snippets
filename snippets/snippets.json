@@ -384,5 +384,47 @@
       "<q-uploader :url=\"${1:url}\" />"
     ],
     "description": "Quasar supplies a way for you to upload files through QUploader component."
+  },
+  "QCard": {
+    "prefix": "qcard",
+    "body": [
+      "<q-card>$1</q-card>"
+    ],
+    "description": "Quasar Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for Apps."
+  },
+  "QCardTitle": {
+    "prefix": "qcardtitle",
+    "body": [
+      "<q-card-title>$1</q-card-title>"
+    ],
+    "description": "QCardTitle has three main areas (all are optional): title, subtitle (“subtitle” slot) and right side (“right” slot)."
+  },
+  "QCardMain": {
+    "prefix": "qcardmain",
+    "body": [
+      "<q-card-main>$1</q-card-main>"
+    ],
+    "description": "QCardMain  defines an area containing the main Card content, like description, details or anything you need outside of the other Card component’s purpose."
+  },
+  "QCardActions": {
+    "prefix": "qcardactions",
+    "body": [
+      "<q-card-actions align=\"${1:center}\">$0</q-card-actions>"
+    ],
+    "description": "Cards can have some actions (buttons) attached to them."
+  },
+  "QCardMedia": {
+    "prefix": "qcardmedia",
+    "body": [
+      "<q-card-media>$1</q-card-media>"
+    ],
+    "description": "Cards can also contain media elements: images, videos (through QVideo) or a parallax (through QParallax). This can be done through QCardMedia component, which supports an optional overlay too (for things like title and/or subtitle)."
+  },
+  "QCardSeparator": {
+    "prefix": "qcardseparator",
+    "body": [
+      "<q-card-separator />"
+    ],
+    "description": "You can choose to add a separator between Card components, which is basically a horizontal thin line, by adding QCardSeparator."
   }
 }

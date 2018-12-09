@@ -16,26 +16,6 @@ qlayout + [tab] => <q-layout view="hHr LpR lFf"></q-layout>
 
 For components properties, I tried to provide just the essential ones that are needed in most cases. The ones that are not used frequently can be looked up in the documentation. But if you find me missing some important property that is used frequently with a given component, don't hesitate to let me know.
 
-## Release Notes
-
-### [0.2.0] - 2018-10-28
-
-Adding Navigation Components
-
-#### added
-
-- Navigation Components
-
-### [0.1.0] - 2018-10-17
-
-Initial release
-
-#### added
-
-- Layout Components
-- Buttons Components
-- Form Components
-
 ## Contribution Guide
 
 This plugin is still in development. Please don't get upset if you don't find a given component and feel free to contribute instead. Your contributions of all sorts are welcome. Here are some guidelines to consider when submitting a contribution.

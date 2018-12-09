@@ -439,5 +439,100 @@
       "<q-card-separator />"
     ],
     "description": "You can choose to add a separator between Card components, which is basically a horizontal thin line, by adding QCardSeparator."
+  },
+  "QCollapsible": {
+    "prefix": "qcollapsible",
+    "body": [
+      "<q-collapsible group=\"${1:somegroup}\" icon=\"${2:explore}\" label=\"${3:First}\">",
+      "  <div>",
+      "    $0",
+      "  </div>",
+      "</q-collapsible>"
+    ],
+    "description": "Quasar Collapsibles allow the hiding of content that is not immediately relevant to the user. Think of them as accordion elements that expand when clicked on."
+  },
+  "QTable": {
+    "prefix": "qtable",
+    "body": [
+      "<q-table",
+      "  title=\"${1:Table Title}\"",
+      "  :data=\"${2:tableData}\"",
+      "  :columns=\"${3:columns}\"",
+      "  row-key=\"${4:name}\"",
+      "/>"
+    ],
+    "description": "QTable is a Component that allows you to display data in a tabular manner."
+  },
+  "QList": {
+    "prefix": "qlist",
+    "body": [
+      "<q-list ${1:highlight}>",
+      "  <q-list-header>${2:Recent chats}</q-list-header>",
+      "  <q-item>",
+      "    <q-item-side avatar=\"${3:statics/linux-avatar.png}\" />",
+      "    <q-item-main label=\"${4:Jim Doe}\" />",
+      "    <q-item-side right icon=\"${5:chat_bubble}\" />",
+      "  </q-item>",
+      "</q-list>"
+    ],
+    "description": "Quasar Lists and List Items are a group of components which can work together to present multiple line items vertically as a single continuous element."
+  },
+  "QItem": {
+    "prefix": "qitem",
+    "body": [
+      "<q-item tag=\"${1:label}\">",
+      "  <q-item-side>",
+      "    ${2:<q-checkbox v-model=\"checkboxModel\" />}",
+      "  </q-item-side>",
+      "  <q-item-main>",
+      "    <q-item-tile label>${3:Notifications}</q-item-tile>",
+      "    <q-item-tile sublabel>${4:Notify me about updates}</q-item-tile>",
+      "  </q-item-main>",
+      "  <q-item-side right>",
+      "    ${5:<q-item-tile icon=\"chat_bubble\" color=\"green\" />}",
+      "  </q-item-side>",
+      "</q-item>"
+    ],
+    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
+  },
+  "QStepper": {
+    "prefix": "qstepper",
+    "body": [
+      "<q-stepper ref=\"${1:stepper}\">",
+      "  <q-step default title=\"${2:First Step}\" subtitle=\"${3:Here we go}\">",
+      "    ${4:step 1 content}",
+      "  </q-step>",
+      "  <q-step title=\"${5:Step 2}\" subtitle=\"${6:Review and submit}\">",
+      "    ${7:step 2 content}",
+      "  </q-step>",
+      "</q-stepper>"
+    ],
+    "description": "Quasar Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps."
+  },
+  "QStepperNavigation": {
+    "prefix": "qsteppernavigation",
+    "body": [
+      "<q-stepper-navigation>",
+      "  <q-btn",
+      "    @click=\"${1:$refs.stepper.previous()}\"",
+      "    label=\"${2:Back}\"",
+      "  />",
+      "  <q-btn",
+      "    @click=\"${3:$refs.stepper.next()}\"",
+      "    label=\"${4:Next}\"",
+      "  />",
+      "</q-stepper-navigation>"
+    ],
+    "description": "QStepperNavigation is a helper for encapsulating Stepper navigation buttons (within QStep or globally for the stepper as direct child of QStepper)"
+  },
+  "QTree": {
+    "prefix": "qtree",
+    "body": [
+      "<q-tree",
+      "  :nodes=\"${1:simple}\"",
+      "  node-key=\"${2:label}\"",
+      "/>"
+    ],
+    "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
   }
 }

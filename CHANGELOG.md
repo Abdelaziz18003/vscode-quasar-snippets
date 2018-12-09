@@ -3,6 +3,14 @@ All notable changes to the "quasar-snippets" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.0] - 2018-12-09
+
+Adding Grouping Components
+
+### added
+
+- Grouping Components
+
 ## [0.2.0] - 2018-10-28
 
 Adding Navigation Components

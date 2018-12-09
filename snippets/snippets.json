@@ -388,7 +388,15 @@
   "QCard": {
     "prefix": "qcard",
     "body": [
-      "<q-card>$1</q-card>"
+      "<q-card>",
+      "  <q-card-title>",
+      "    ${1:Card Title}",
+      "  </q-card-title>",
+      "  <q-card-separator />",
+      "  <q-card-main>",
+      "    ${2:Card Content}",
+      "  </q-card-main>",
+      "</q-card>"
     ],
     "description": "Quasar Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for Apps."
   },
@@ -409,14 +417,19 @@
   "QCardActions": {
     "prefix": "qcardactions",
     "body": [
-      "<q-card-actions align=\"${1:center}\">$0</q-card-actions>"
+      "<q-card-actions ${1:vertical} align=\"${2:center}\">",
+      "  <q-btn flat label=\"${3:Action 1}\" />",
+      "  <q-btn flat label=\"${4:Action 2}\" />",
+      "</q-card-actions>"
     ],
     "description": "Cards can have some actions (buttons) attached to them."
   },
   "QCardMedia": {
     "prefix": "qcardmedia",
     "body": [
-      "<q-card-media>$1</q-card-media>"
+      "<q-card-media>",
+      "  <img src=\"${1:~assets/some-image.jpg}\">",
+      "</q-card-media>"
     ],
     "description": "Cards can also contain media elements: images, videos (through QVideo) or a parallax (through QParallax). This can be done through QCardMedia component, which supports an optional overlay too (for things like title and/or subtitle)."
   },

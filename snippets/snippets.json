@@ -534,5 +534,78 @@
       "/>"
     ],
     "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
+  },
+  "QActionSheet": {
+    "prefix": "qactionsheet",
+    "body": [
+      "<q-action-sheet",
+      "  v-model=\"${1:actionSheet}\"",
+      "  title=\"${2:Action Sheet}\"",
+      "  @ok=\"${3:onOk}\"",
+      "  @cancel=\"${4:onCancel}\"",
+      "  @show=\"${5:onShow}\"",
+      "  @hide=\"${6:onHide}\"",
+      "  :actions=\"[",
+      "    {",
+      "      label: '${7:Delete}',",
+      "      icon: '${8:delete}',",
+      "      color: '${9:red}',",
+      "      handler: ${10:deleteAction}",
+      "    }",
+      "  ]\"",
+      "/>$0"
+    ],
+    "description": "Action Sheets slide up from the bottom edge of the device screen, and display a set of options with the ability to confirm or cancel an action. Action Sheets can sometimes be used as an alternative to menus, however, they should not be used for navigation."
+  },
+  "QDialog": {
+    "prefix": "qdialog",
+    "body": [
+      "<q-dialog",
+      "  v-model=\"${1:customDialogModel}\"",
+      "  ${2:stack-buttons}",
+      "  ${3:prevent-close}",
+      "  @ok=\"${4:onOk}\"",
+      "  @cancel=\"${5:onCancel}\"",
+      "  @show=\"${6:onShow}\"",
+      "  @hide=\"${7:onHide}\"",
+      "/>"
+    ],
+    "description": "Quasar Dialogs are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
+  },
+  "QModal": {
+    "prefix": "qmodal",
+    "body": [
+      "<q-modal v-model=\"${1:opened}\">",
+      "  $0",
+      "</q-modal>"
+    ],
+    "description": "The Quasar Modal component is a UI overlay, which offers extended screen space to allow the user to get more work done."
+  },
+  "QPopover": {
+    "prefix": "qpopover",
+    "body": [
+      "<q-popover v-model=\"${1:showing}\">",
+      "  $0",
+      "</q-popover>"
+    ],
+    "description": "QPopover should be used when you want a menu (or any content) to be displayed on a popup as a result of user clicking/tapping on a DOM element / component."
+  },
+  "QTooltip": {
+    "prefix": "qtooltip",
+    "body": [
+      "<q-tooltip v-model=\"${1:showing}\">",
+      "  $0",
+      "</q-tooltip>"
+    ],
+    "description": "QTooltip should be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the Tooltip will appear."
+  },
+  "QPopupEdit": {
+    "prefix": "qpopupedit",
+    "body": [
+      "<q-popup-edit v-model=\"${1:model}\">",
+      "  $0",
+      "</q-popup-edit>"
+    ],
+    "description": "QPopupEdit is a component that can be used to edit a value “in place”, like for example a cell in a QTable."
   }
 }

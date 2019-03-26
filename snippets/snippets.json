@@ -607,5 +607,39 @@
       "</q-popup-edit>"
     ],
     "description": "QPopupEdit is a component that can be used to edit a value “in place”, like for example a cell in a QTable."
+  },
+  "QAjaxBar": {
+    "prefix": "qajaxbar",
+    "body": [
+      "<q-ajax-bar position=\"${1:top}\" size=\"${2:4px}\" color=\"${3:red}\" />"
+    ],
+    "description": "Ajax Bar is a component which displays a loading bar (like Youtube) whenever an Ajax call (regardless of Ajax library used) is in progress. It can be manually triggered as well."
+  },
+  "QInnerLoading": {
+    "prefix": "qinnerloading",
+    "body": [
+      "<q-inner-loading :visible=\"${1:visible}\">",
+      "  <q-spinner-gears size=\"${2:50px}\" color=\"${3:primary}\"></q-spinner-gears>",
+      "</q-inner-loading>"
+    ],
+    "description": "The QInnerLoading component allows you to add a progress animation within a component."
+  },
+  "QProgress": {
+    "prefix": "qprogress",
+    "body": [
+      "<q-progress",
+      "  :percentage=\"${1:progressBuffer}\"",
+      "  :buffer=\"${2:buffer}\"",
+      "  style=\"${3:height: 4px}\"",
+      "/>"
+    ],
+    "description": "A Progress bar is used to show a process is being worked on, so the user isn’t staring at a static page, even though the system is working in the background."
+  },
+  "QSpinner": {
+    "prefix": "qspinner",
+    "body": [
+      "<q-spinner${1:-gears} color=\"${2:teal-4}\" size=\"${3:40px}\" />"
+    ],
+    "description": "A Spinner is used to show the user a timely process is currently taking place."
   }
 }

@@ -1,7 +1,18 @@
 # Change Log
+
 All notable changes to the "quasar-snippets" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
+## [0.4.0] - 2019-03-26
+
+Adding Popups, Progress & Media Components
+
+### added
+
+- Popups Components
+- Progress Components
+- Media Components
 
 ## [0.3.0] - 2018-12-09
 

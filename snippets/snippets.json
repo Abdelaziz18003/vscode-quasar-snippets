@@ -641,5 +641,39 @@
       "<q-spinner${1:-gears} color=\"${2:teal-4}\" size=\"${3:40px}\" />"
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place."
+  },
+  "QCarousel": {
+    "prefix": "qcarousel",
+    "body": [
+      "<q-carousel class=\"${1:text-white}\">",
+      "  <q-carousel-slide class=\"${2:bg-primary}\">",
+      "    ${3:Slide 1}",
+      "  </q-carousel-slide>",
+      "  <q-carousel-slide class=\"${4:bg-secondary}\">",
+      "    ${5:Slide 2}",
+      "  </q-carousel-slide>",
+      "</q-carousel>"
+    ],
+    "description": "Quasar Carousel is a Vue Component which you can use to display more information with less real estate, using slides. Useful for creating Wizards too."
+  },
+  "QParallax": {
+    "prefix": "qparallax",
+    "body": [
+      "<q-parallax>",
+      "  <img slot=\"media\" src=\"${1:assets/parallax2.jpg}\">",
+      "  ${2:<h1>Slot</h1>}",
+      "</q-parallax>"
+    ],
+    "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
+  },
+  "QVideo": {
+    "prefix": "qvideo",
+    "body": [
+      "<q-video",
+      "  src=\"${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}\"",
+      "  style=\":width: ${2:853px}; height: ${3:480px}\"",
+      "/>"
+    ],
+    "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
   }
 }

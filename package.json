@@ -19,11 +19,19 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/html-snippets.json"
       },
       {
         "language": "vue-html",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/html-snippets.json"
+      },
+      {
+        "language": "jade",
+        "path": "./snippets/jade-snippets.json"
+      },
+      {
+        "language": "vue-jade",
+        "path": "./snippets/jade-snippets.json"
       }
     ]
   }

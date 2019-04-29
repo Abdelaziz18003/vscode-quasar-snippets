@@ -4,6 +4,15 @@ All notable changes to the "quasar-snippets" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.5.0] - 2019-04-29
+
+Adding Scrolling Components & Pug Templates Support
+
+### added
+
+- Scrolling Components
+- Pug Templates Support
+
 ## [0.4.0] - 2019-03-26
 
 Adding Popups, Progress & Media Components

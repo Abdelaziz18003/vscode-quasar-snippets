@@ -675,5 +675,35 @@
       "/>"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
+  },
+  "QScrollObservable": {
+    "prefix": "qscrollobservable",
+    "body": [
+      "<q-scroll-observable @scroll=\"${1:userHasScrolled}\" />"
+    ],
+    "description": "QScrollObservable is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
+  },
+  "QInfiniteScroll": {
+    "prefix": "qinfinitescroll",
+    "body": [
+      "<q-infinite-scroll :handler=\"${1:loadMore}\">",
+      "  <div v-for=\"${2:item} in ${3:items}\">",
+      "    $0",
+      "  </div>",
+      "  <q-spinner-dots slot=\"message\" :size=\"40\"></q-spinner-dots>",
+      "</q-infinite-scroll>"
+    ],
+    "description": "When you want to progressively load new content as the user scrolls down your Page, use QInfiniteScroll component."
+  },
+  "QScrollArea": {
+    "prefix": "qscrollarea",
+    "body": [
+      "<q-scroll-area style=\"width: ${1:400px}; height: ${2:100px};\">",
+      "  <div v-for=\"${3:n} in ${4:10}\">",
+      "    Lorem ipsum dolor sit amet, consectetur adipisicing",
+      "  </div>",
+      "</q-scroll-area>"
+    ],
+    "description": "Quasar offers a neat way of customizing the scrollbars with the help of QScrollArea component which can encapsulate your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
   }
 }

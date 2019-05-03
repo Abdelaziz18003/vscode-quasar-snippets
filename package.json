@@ -1,38 +1,43 @@
 {
-  "name": "quasar-snippets",
-  "displayName": "Quasar Snippets",
-  "description": "vscode snippets for quasar-framework ",
-  "version": "0.5.0",
-  "publisher": "abdelaziz18003",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Abdelaziz18003/vscode-quasar-snippets.git"
-  },
-  "icon": "images/icon.png",
-  "engines": {
-    "vscode": "^1.28.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets/html-snippets.json"
-      },
-      {
-        "language": "vue-html",
-        "path": "./snippets/html-snippets.json"
-      },
-      {
-        "language": "jade",
-        "path": "./snippets/jade-snippets.json"
-      },
-      {
-        "language": "vue-jade",
-        "path": "./snippets/jade-snippets.json"
-      }
-    ]
-  }
+	"name": "quasar-snippets",
+	"displayName": "Quasar Snippets",
+	"description": "vscode snippets for quasar-framework ",
+	"version": "0.5.0",
+	"publisher": "abdelaziz18003",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Abdelaziz18003/vscode-quasar-snippets.git"
+	},
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/html-snippets.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/html-snippets.json"
+			},
+			{
+				"language": "jade",
+				"path": "./snippets/jade-snippets.json"
+			},
+			{
+				"language": "vue-jade",
+				"path": "./snippets/jade-snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "d0d67b9a-ca83-4113-8a1e-4af32b28688d",
+		"publisherDisplayName": "Abdelaziz Mokhnache",
+		"publisherId": "cdd0e72d-bca3-4d14-bf7d-648c80d7a395"
+	}
 }

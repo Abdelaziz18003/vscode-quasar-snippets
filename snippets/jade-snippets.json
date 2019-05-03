@@ -38,7 +38,7 @@
     "prefix": "qpagesticky",
     "body": [
       "q-page-sticky(position='${1:top-right}', :offset='[${2:18}, ${3:18}]')",
-      "  q-btn(round, color='${4:primary}', @click='${5:alert}', icon='${6:alarm}').",
+      "\tq-btn(round, color='${4:primary}', @click='${5:alert}', icon='${6:alarm}').",
       ""
     ],
     "description": "A component that helps in placing DOM elements wrapped by it into a static position within the content area of your Layout, no matter where the user scrolls"
@@ -47,7 +47,7 @@
     "prefix": "qfab",
     "body": [
       "q-fab(color='${1:primary}', icon='${2:add}', direction='${3:up}')",
-      "  q-fab-action(color='${4:purple}', @click='${5:someMethod}', icon='${6:mail}').",
+      "\tq-fab-action(color='${4:purple}', @click='${5:someMethod}', icon='${6:mail}').",
       ""
     ],
     "description": "A Floating Action Button (FAB) represents the primary action in an App Page. But, it\u2019s not limited to only a single action. It can contain any number of sub-actions too"
@@ -56,8 +56,8 @@
     "prefix": "qresizeobservable",
     "body": [
       "div",
-      "  q-resize-observable(@resize='${1:onResize}').",
-      "    $0",
+      "\tq-resize-observable(@resize='${1:onResize}').",
+      "\t\t$0",
       ""
     ],
     "description": "A component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObservable) changes its size"
@@ -87,9 +87,9 @@
     "prefix": "qbtngroup",
     "body": [
       "q-btn-group",
-      "  q-btn(label='${1:One}', @click='${2:clickHandler1}')",
-      "    q-btn(label='${3:Two}', @click='${4:clickHandler2}')",
-      "      q-btn(label='${5:Three}', @click='${6:clickHandler3}').",
+      "\tq-btn(label='${1:One}', @click='${2:clickHandler1}')",
+      "\t\tq-btn(label='${3:Two}', @click='${4:clickHandler2}')",
+      "\t\t\tq-btn(label='${5:Three}', @click='${6:clickHandler3}').",
       ""
     ],
     "description": "A group of QBtn components"
@@ -98,10 +98,10 @@
     "prefix": "qbtndropdown",
     "body": [
       "q-btn-dropdown(label='${1:Button}')",
-      "  q-list(link)",
-      "    q-item",
-      "      q-item-main",
-      "        q-item-tile(label) ${2:Item}"
+      "\tq-list(link)",
+      "\t\tq-item",
+      "\t\t\tq-item-main",
+      "\t\t\t\tq-item-tile(label) ${2:Item}"
     ],
     "description": "A convenient dropdown button. Goes very well with QList as dropdown content"
   },
@@ -116,7 +116,7 @@
     "prefix": "qtoolbartitle",
     "body": [
       "q-toolbar-title.",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "Used to wrap the \u201ctitle\u201d of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
@@ -125,8 +125,8 @@
     "prefix": "qtabs",
     "body": [
       "q-tabs",
-      "  q-tab(slot='${1:slot}', name='${2:name}', label='${3:label}')",
-      "    q-tab-pane(name='${4:name}') $0"
+      "\tq-tab(slot='${1:slot}', name='${2:name}', label='${3:label}')",
+      "\t\tq-tab-pane(name='${4:name}') $0"
     ],
     "description": "Quasar Tabs are a way of displaying more information using less window real estate."
   },
@@ -155,7 +155,7 @@
     "prefix": "qpulltorefresh",
     "body": [
       "q-pull-to-refresh(:handler='${1:refresher}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "When you want to allow the user to refresh the content or retrieve the newest content."
@@ -164,11 +164,11 @@
     "prefix": "qcontextmenu",
     "body": [
       "q-context-menu",
-      "  q-list(link, separator, style='min-width: ${1:150px}; max-height: ${2:300px};')",
-      "    q-item(v-close-overlay, @click.native='${3:showToast}()')",
-      "      q-item-main(label='${4:Label}', sublabel='${5:Value}').",
-      "    q-item(v-close-overlay, @click.native='${6:showOtherToast}()')",
-      "      q-item-main(label='${7:Other Label}', sublabel='${8:Other Value}').",
+      "\tq-list(link, separator, style='min-width: ${1:150px}; max-height: ${2:300px};')",
+      "\t\tq-item(v-close-overlay, @click.native='${3:showToast}()')",
+      "\t\t\tq-item-main(label='${4:Label}', sublabel='${5:Value}').",
+      "\t\tq-item(v-close-overlay, @click.native='${6:showOtherToast}()')",
+      "\t\t\tq-item-main(label='${7:Other Label}', sublabel='${8:Other Value}').",
       ""
     ],
     "description": "This component allows you to display a context menu (popup) instead of the default browser one when user performs a right-click (or long tap on touch capable devices)."
@@ -177,9 +177,9 @@
     "prefix": "qbreadcrumbs",
     "body": [
       "q-breadcrumbs",
-      "  q-breadcrumbs-el(label='${1:Home}', icon='${2:home}')",
-      "    q-breadcrumbs-el(label='${3:Components}', icon='${4:widgets}')",
-      "      q-breadcrumbs-el(label='${5:Breadcrumbs}', icon='${6:navigation}').",
+      "\tq-breadcrumbs-el(label='${1:Home}', icon='${2:home}')",
+      "\t\tq-breadcrumbs-el(label='${3:Components}', icon='${4:widgets}')",
+      "\t\t\tq-breadcrumbs-el(label='${5:Breadcrumbs}', icon='${6:navigation}').",
       ""
     ],
     "description": "Quasar Breadcrumbs is a component used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites."
@@ -195,7 +195,7 @@
     "prefix": "qfield",
     "body": [
       "q-field(icon='${1:cloud}', label='${2:Your Gmail}', helper='${3:Helper}', :error='${4:mailHasError}', error-label='${5:We need a valid email}', :count='${6:10}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "A component that allows to easily build responsive Forms UI by wrapping each Form component (QInput, QSelect and so on) to enrich it with a main label, an icon, error placeholder and error state, helper placeholder and/or item/character counter."
@@ -288,9 +288,9 @@
     "prefix": "qbtntoggle",
     "body": [
       "q-btn-toggle(v-model='${1:model}', toggle-color='${2:primary}', :options='[",
-      "  {label: '${3:One}', value: '${4:one}'},",
-      "  {label: '${5:Two}', value: '${6:two}'},",
-      "  {label: '${7:Three}', value: '${8:three}'}",
+      "\t{label: '${3:One}', value: '${4:one}'},",
+      "\t{label: '${5:Two}', value: '${6:two}'},",
+      "\t{label: '${7:Three}', value: '${8:three}'}",
       "]')"
     ],
     "description": "The QBtnToggle component is another basic element for user input, similar to QRadio but with buttons. You can use this to supply a way for the user to pick an option from multiple choices."
@@ -299,9 +299,9 @@
     "prefix": "qoptiongroup",
     "body": [
       "q-option-group(color='${1:secondary}', type='${2:checkbox}', v-model='${3:group}', :options='[",
-      "  { label: '${4:Option 1}', value: '${5:op1}' },",
-      "  { label: '${6:Option 2}', value: '${7:op2}' },",
-      "  { label: '${8:Option 3}', value: '${9:op3}' }",
+      "\t{ label: '${4:Option 1}', value: '${5:op1}' },",
+      "\t{ label: '${6:Option 2}', value: '${7:op2}' },",
+      "\t{ label: '${8:Option 3}', value: '${9:op3}' }",
       "]')"
     ],
     "description": "The Quasar Option Group component is a helper component, which allows you to better control the grouping of binary (as in on or off, true or false, 1 or 0) form input components like checkboxes, radios or toggles."
@@ -352,11 +352,11 @@
     "prefix": "qcard",
     "body": [
       "q-card",
-      "  q-card-title.",
-      "    ${1:Card Title}",
-      "  q-card-separator",
-      "    q-card-main.",
-      "      ${2:Card Content}",
+      "\tq-card-title.",
+      "\t\t${1:Card Title}",
+      "\tq-card-separator",
+      "\t\tq-card-main.",
+      "\t\t\t${2:Card Content}",
       ""
     ],
     "description": "Quasar Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for Apps."
@@ -379,8 +379,8 @@
     "prefix": "qcardactions",
     "body": [
       "q-card-actions(${1:vertical}, align='${2:center}')",
-      "  q-btn(flat, label='${3:Action 1}')",
-      "    q-btn(flat, label='${4:Action 2}').",
+      "\tq-btn(flat, label='${3:Action 1}')",
+      "\t\tq-btn(flat, label='${4:Action 2}').",
       ""
     ],
     "description": "Cards can have some actions (buttons) attached to them."
@@ -389,7 +389,7 @@
     "prefix": "qcardmedia",
     "body": [
       "q-card-media",
-      "  img(src='${1:~assets/some-image.jpg}')"
+      "\timg(src='${1:~assets/some-image.jpg}')"
     ],
     "description": "Cards can also contain media elements: images, videos (through QVideo) or a parallax (through QParallax). This can be done through QCardMedia component, which supports an optional overlay too (for things like title and/or subtitle)."
   },
@@ -404,8 +404,8 @@
     "prefix": "qcollapsible",
     "body": [
       "q-collapsible(group='${1:somegroup}', icon='${2:explore}', label='${3:First}')",
-      "  div.",
-      "    $0",
+      "\tdiv.",
+      "\t\t$0",
       ""
     ],
     "description": "Quasar Collapsibles allow the hiding of content that is not immediately relevant to the user. Think of them as accordion elements that expand when clicked on."
@@ -421,11 +421,11 @@
     "prefix": "qlist",
     "body": [
       "q-list(${1:highlight})",
-      "  q-list-header ${2:Recent chats}",
-      "  q-item",
-      "    q-item-side(avatar='${3:statics/linux-avatar.png}')",
-      "      q-item-main(label='${4:Jim Doe}')",
-      "        q-item-side(right, icon='${5:chat_bubble}').",
+      "\tq-list-header ${2:Recent chats}",
+      "\tq-item",
+      "\t\tq-item-side(avatar='${3:statics/linux-avatar.png}')",
+      "\t\t\tq-item-main(label='${4:Jim Doe}')",
+      "\t\t\t\tq-item-side(right, icon='${5:chat_bubble}').",
       ""
     ],
     "description": "Quasar Lists and List Items are a group of components which can work together to present multiple line items vertically as a single continuous element."
@@ -434,13 +434,13 @@
     "prefix": "qitem",
     "body": [
       "q-item(tag='${1:label}')",
-      "  q-item-side",
-      "    ${2:q-checkbox(v-model='checkboxModel')}",
-      "  q-item-main",
-      "    q-item-tile(label) ${3:Notifications}",
-      "    q-item-tile(sublabel) ${4:Notify me about updates}",
-      "  q-item-side(right)",
-      "    ${5:q-item-tile(icon='chat_bubble', color='green')}",
+      "\tq-item-side",
+      "\t\t${2:q-checkbox(v-model='checkboxModel')}",
+      "\tq-item-main",
+      "\t\tq-item-tile(label) ${3:Notifications}",
+      "\t\tq-item-tile(sublabel) ${4:Notify me about updates}",
+      "\tq-item-side(right)",
+      "\t\t${5:q-item-tile(icon='chat_bubble', color='green')}",
       ""
     ],
     "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
@@ -449,10 +449,10 @@
     "prefix": "qstepper",
     "body": [
       "q-stepper(ref='${1:stepper}')",
-      "  q-step(default, title='${2:First Step}', subtitle='${3:Here we go}').",
-      "    ${4:step 1 content}",
-      "  q-step(title='${5:Step 2}', subtitle='${6:Review and submit}').",
-      "    ${7:step 2 content}",
+      "\tq-step(default, title='${2:First Step}', subtitle='${3:Here we go}').",
+      "\t\t${4:step 1 content}",
+      "\tq-step(title='${5:Step 2}', subtitle='${6:Review and submit}').",
+      "\t\t${7:step 2 content}",
       ""
     ],
     "description": "Quasar Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps."
@@ -461,8 +461,8 @@
     "prefix": "qsteppernavigation",
     "body": [
       "q-stepper-navigation",
-      "  q-btn(@click='${1:$refs.stepper.previous()}', label='${2:Back}')",
-      "    q-btn(@click='${3:$refs.stepper.next()}', label='${4:Next}').",
+      "\tq-btn(@click='${1:$refs.stepper.previous()}', label='${2:Back}')",
+      "\t\tq-btn(@click='${3:$refs.stepper.next()}', label='${4:Next}').",
       ""
     ],
     "description": "QStepperNavigation is a helper for encapsulating Stepper navigation buttons (within QStep or globally for the stepper as direct child of QStepper)"
@@ -478,12 +478,12 @@
     "prefix": "qactionsheet",
     "body": [
       "q-action-sheet(v-model='${1:actionSheet}', title='${2:Action Sheet}', @ok='${3:onOk}', @cancel='${4:onCancel}', @show='${5:onShow}', @hide='${6:onHide}', :actions='[",
-      "  {",
-      "    label: '${7:Delete}',",
-      "    icon: '${8:delete}',",
-      "    color: '${9:red}',",
-      "    handler: ${10:deleteAction}",
-      "  }",
+      "\t{",
+      "\t\tlabel: '${7:Delete}',",
+      "\t\ticon: '${8:delete}',",
+      "\t\tcolor: '${9:red}',",
+      "\t\thandler: ${10:deleteAction}",
+      "\t}",
       "]') $0"
     ],
     "description": "Action Sheets slide up from the bottom edge of the device screen, and display a set of options with the ability to confirm or cancel an action. Action Sheets can sometimes be used as an alternative to menus, however, they should not be used for navigation."
@@ -499,7 +499,7 @@
     "prefix": "qmodal",
     "body": [
       "q-modal(v-model='${1:opened}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "The Quasar Modal component is a UI overlay, which offers extended screen space to allow the user to get more work done."
@@ -508,7 +508,7 @@
     "prefix": "qpopover",
     "body": [
       "q-popover(v-model='${1:showing}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "QPopover should be used when you want a menu (or any content) to be displayed on a popup as a result of user clicking/tapping on a DOM element / component."
@@ -517,7 +517,7 @@
     "prefix": "qtooltip",
     "body": [
       "q-tooltip(v-model='${1:showing}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "QTooltip should be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the Tooltip will appear."
@@ -526,7 +526,7 @@
     "prefix": "qpopupedit",
     "body": [
       "q-popup-edit(v-model='${1:model}').",
-      "  $0",
+      "\t$0",
       ""
     ],
     "description": "QPopupEdit is a component that can be used to edit a value \u201cin place\u201d, like for example a cell in a QTable."
@@ -542,7 +542,7 @@
     "prefix": "qinnerloading",
     "body": [
       "q-inner-loading(:visible='${1:visible}')",
-      "  q-spinner-gears(size='${2:50px}', color='${3:primary}')"
+      "\tq-spinner-gears(size='${2:50px}', color='${3:primary}')"
     ],
     "description": "The QInnerLoading component allows you to add a progress animation within a component."
   },
@@ -564,10 +564,10 @@
     "prefix": "qcarousel",
     "body": [
       "q-carousel.${1:text-white}",
-      "  q-carousel-slide.${2:bg-primary}.",
-      "    ${3:Slide 1}",
-      "  q-carousel-slide.${4:bg-secondary}.",
-      "    ${5:Slide 2}",
+      "\tq-carousel-slide.${2:bg-primary}.",
+      "\t\t${3:Slide 1}",
+      "\tq-carousel-slide.${4:bg-secondary}.",
+      "\t\t${5:Slide 2}",
       ""
     ],
     "description": "Quasar Carousel is a Vue Component which you can use to display more information with less real estate, using slides. Useful for creating Wizards too."
@@ -576,8 +576,8 @@
     "prefix": "qparallax",
     "body": [
       "q-parallax",
-      "  img(slot='media', src='${1:assets/parallax2.jpg}')",
-      "  ${2:h1 Slot}",
+      "\timg(slot='media', src='${1:assets/parallax2.jpg}')",
+      "\t${2:h1 Slot}",
       ""
     ],
     "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
@@ -600,9 +600,9 @@
     "prefix": "qinfinitescroll",
     "body": [
       "q-infinite-scroll(:handler='${1:loadMore}')",
-      "  div(v-for='${2:item} in ${3:items}')",
-      "    | $0",
-      "  q-spinner-dots(slot='message' :size='40')"
+      "\tdiv(v-for='${2:item} in ${3:items}')",
+      "\t\t| $0",
+      "\tq-spinner-dots(slot='message' :size='40')"
     ],
     "description": "When you want to progressively load new content as the user scrolls down your Page, use QInfiniteScroll component."
   },
@@ -610,8 +610,8 @@
     "prefix": "qscrollarea",
     "body": [
       "q-scroll-area(style='width: ${1:400px}; height: ${2:100px};')",
-      "  div(v-for='${3:n} in ${4:10}')",
-      "    | Lorem ipsum dolor sit amet, consectetur adipisicing"
+      "\tdiv(v-for='${3:n} in ${4:10}')",
+      "\t\t| Lorem ipsum dolor sit amet, consectetur adipisicing"
     ],
     "description": "Quasar offers a neat way of customizing the scrollbars with the help of QScrollArea component which can encapsulate your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
   }

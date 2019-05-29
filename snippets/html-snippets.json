@@ -695,6 +695,13 @@
     ],
     "description": "When you want to progressively load new content as the user scrolls down your Page, use QInfiniteScroll component."
   },
+  "QSeparator": {
+    "prefix": "qseparator",
+    "body": [
+      "<q-separator spaced=\"${1:false}\" inset=\"${2:false}\" />"
+    ],
+    "description": "The QSeparator Component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
+  },
   "QScrollArea": {
     "prefix": "qscrollarea",
     "body": [

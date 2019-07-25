@@ -12,7 +12,7 @@ All you need to do is typing the component's name **all in lowercase** and press
 qlayout + [tab] => <q-layout view="hHr LpR lFf"></q-layout>
 ```
 
-![features demo](images/demo.gif)
+![features demo](https://user-images.githubusercontent.com/11301627/61893166-51961b80-af05-11e9-837c-313ffaec4600.gif)
 
 For components properties, I tried to provide just the essential ones that are needed in most cases. The ones that are not used frequently can be looked up in the documentation. But if you find me missing some important property that is used frequently with a given component, don't hesitate to let me know.
 

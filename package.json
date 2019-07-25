@@ -8,6 +8,9 @@
 		"type": "git",
 		"url": "https://github.com/Abdelaziz18003/vscode-quasar-snippets.git"
 	},
+	"scripts": {
+		"pug": "vsc-snippets-html2pug --src snippets/html-snippets.json --dist snippets/jade-snippets.json"
+	},
 	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.28.0"
@@ -39,5 +42,8 @@
 		"id": "d0d67b9a-ca83-4113-8a1e-4af32b28688d",
 		"publisherDisplayName": "Abdelaziz Mokhnache",
 		"publisherId": "cdd0e72d-bca3-4d14-bf7d-648c80d7a395"
+	},
+	"devDependencies": {
+		"vsc-snippets-html2pug": "^0.1.0"
 	}
 }

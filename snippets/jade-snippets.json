@@ -6,6 +6,13 @@
     ],
     "description": "The QAvatar component creates a scalable, color-able element that can have text, icon or image within its shape. By default it is circular, but it can also be square or have a border-radius applied to give rounded corners to the square shape."
   },
+  "QBadge": {
+    "prefix": "qbadge",
+    "body": [
+      "q-badge(color='{1:orange}', text-color='{2:black}', label='{3:v1.0.0}')"
+    ],
+    "description": "The QBadge component allows you to create a small badge for adding information like contextual data that needs to stand out and get noticed. It is also often useful in combination with other elements like a user avatar to show a number of new messages."
+  },
   "QLayout": {
     "prefix": "qlayout",
     "body": [

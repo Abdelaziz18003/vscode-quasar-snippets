@@ -99,6 +99,13 @@
     ],
     "description": "The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps."
   },
+  "QCircularProgress": {
+    "prefix": "qcircularprogress",
+    "body": [
+      "q-circular-progress.${7:q-ma-md}(${1:indeterminate}, size='${2:90px}', :thickness='${3:0.2}', color='${4:lime}', center-color='${5:grey-8}', track-color='${6:transparent}')"
+    ],
+    "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
+  },
   "QBtn 1": {
     "prefix": "qbtn1",
     "body": [

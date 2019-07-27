@@ -86,11 +86,11 @@
     "prefix": "qbanner",
     "body": [
       "<q-banner class=\"{1:bg-primary text-white}\">",
-      "  {2:Unfortunately, the credit card did not go through, please try again.}",
-      "  <template v-slot:action>",
-      "    <q-btn flat color=\"{3:white}\" label=\"{4:Dismiss}\" />",
-      "    <q-btn flat color=\"{5:white}\" label=\"{6:Update Credit Card}\" />",
-      "  </template>",
+      "\t{2:Unfortunately, the credit card did not go through, please try again.}",
+      "\t<template v-slot:action>",
+      "\t\t<q-btn flat color=\"{3:white}\" label=\"{4:Dismiss}\" />",
+      "\t\t<q-btn flat color=\"{5:white}\" label=\"{6:Update Credit Card}\" />",
+      "\t</template>",
       "</q-banner>"
     ],
     "description": "The QBanner component creates a banner element to display a prominent message and related optional actions."
@@ -99,15 +99,30 @@
     "prefix": "qbar",
     "body": [
       "<q-bar dark class=\"${1:bg-primary text-white}\">",
-      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"red\" />",
-      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"yellow\" />",
-      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"green\" />",
-      "  <div class=\"col text-center text-weight-bold\">",
-      "    ${2:My-App}",
-      "  </div>",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"red\" />",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"yellow\" />",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"green\" />",
+      "\t<div class=\"col text-center text-weight-bold\">",
+      "\t\t${2:My-App}",
+      "\t</div>",
       "</q-bar>"
     ],
     "description": "The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps."
+  },
+  "QCircularProgress": {
+    "prefix": "qcircularprogress",
+    "body": [
+      "<q-circular-progress",
+      "\t${1:indeterminate}",
+      "\tsize=\"${2:90px}\"",
+      "\t:thickness=\"${3:0.2}\"",
+      "\tcolor=\"${4:lime}\"",
+      "\tcenter-color=\"${5:grey-8}\"",
+      "\ttrack-color=\"${6:transparent}\"",
+      "\tclass=\"${7:q-ma-md}\"",
+      "/>"
+    ],
+    "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
   },
   "QBtn 1": {
     "prefix": "qbtn1",

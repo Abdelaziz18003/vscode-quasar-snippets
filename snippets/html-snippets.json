@@ -1,18 +1,4 @@
 {
-  "QAvatar": {
-    "prefix": "qavatar",
-    "body": [
-      "<q-avatar size=\"${1:100px}\" font-size=\"${2:52px}\" color=\"${3:teal}\" text-color=\"${4:white}\" icon=\"${5:directions}\" />"
-    ],
-    "description": "The QAvatar component creates a scalable, color-able element that can have text, icon or image within its shape. By default it is circular, but it can also be square or have a border-radius applied to give rounded corners to the square shape."
-  },
-  "QBadge": {
-    "prefix": "qbadge",
-    "body": [
-      "<q-badge color=\"{1:orange}\" text-color=\"{2:black}\" label=\"{3:v1.0.0}\" />"
-    ],
-    "description": "The QBadge component allows you to create a small badge for adding information like contextual data that needs to stand out and get noticed. It is also often useful in combination with other elements like a user avatar to show a number of new messages."
-  },
   "QLayout": {
     "prefix": "qlayout",
     "body": [
@@ -81,6 +67,33 @@
       "<q-window-resize-observable @resize=\"${1:onResize}\" />$0"
     ],
     "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
+  },
+  "QAvatar": {
+    "prefix": "qavatar",
+    "body": [
+      "<q-avatar size=\"${1:100px}\" font-size=\"${2:52px}\" color=\"${3:teal}\" text-color=\"${4:white}\" icon=\"${5:directions}\" />"
+    ],
+    "description": "The QAvatar component creates a scalable, color-able element that can have text, icon or image within its shape. By default it is circular, but it can also be square or have a border-radius applied to give rounded corners to the square shape."
+  },
+  "QBadge": {
+    "prefix": "qbadge",
+    "body": [
+      "<q-badge color=\"{1:orange}\" text-color=\"{2:black}\" label=\"{3:v1.0.0}\" />"
+    ],
+    "description": "The QBadge component allows you to create a small badge for adding information like contextual data that needs to stand out and get noticed. It is also often useful in combination with other elements like a user avatar to show a number of new messages."
+  },
+  "QBanner": {
+    "prefix": "qbanner",
+    "body": [
+      "<q-banner class=\"{1:bg-primary text-white}\">",
+      "  {2:Unfortunately, the credit card did not go through, please try again.}",
+      "  <template v-slot:action>",
+      "    <q-btn flat color=\"{3:white}\" label=\"{4:Dismiss}\" />",
+      "    <q-btn flat color=\"{5:white}\" label=\"{6:Update Credit Card}\" />",
+      "  </template>",
+      "</q-banner>"
+    ],
+    "description": "The QBanner component creates a banner element to display a prominent message and related optional actions."
   },
   "QBtn 1": {
     "prefix": "qbtn1",

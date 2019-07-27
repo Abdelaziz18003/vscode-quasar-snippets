@@ -95,6 +95,20 @@
     ],
     "description": "The QBanner component creates a banner element to display a prominent message and related optional actions."
   },
+  "QBar": {
+    "prefix": "qbar",
+    "body": [
+      "<q-bar dark class=\"${1:bg-primary text-white}\">",
+      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"red\" />",
+      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"yellow\" />",
+      "  <q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"green\" />",
+      "  <div class=\"col text-center text-weight-bold\">",
+      "    ${2:My-App}",
+      "  </div>",
+      "</q-bar>"
+    ],
+    "description": "The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps."
+  },
   "QBtn 1": {
     "prefix": "qbtn1",
     "body": [

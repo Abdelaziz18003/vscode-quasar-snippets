@@ -221,6 +221,17 @@
     ],
     "description": "The Quasar Pagination component is available for whenever a pagination system is required. It offers the user a simple UI to help you in moving between pages/items."
   },
+  "QForm": {
+    "prefix": "qform",
+    "body": [
+      "q-form.q-gutter-md(@submit='${1:onSubmit}', @reset='${2:onReset}')",
+      "\t| $0",
+      "\tdiv",
+      "\t\tq-btn(label='${3:Submit}', type='submit', color='primary')",
+      "\t\t\tq-btn.q-ml-sm(label='${4:Reset}', type='reset', color='primary', flat)"
+    ],
+    "description": "The QForm component renders a <form> DOM element and allows you to easily validate child form components (like QInput, QSelect or your QField wrapped components) that have the internal validation (NOT the external one) through rules associated with them."
+  },
   "QField": {
     "prefix": "qfield",
     "body": [

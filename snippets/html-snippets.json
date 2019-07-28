@@ -432,6 +432,18 @@
     ],
     "description": "Select component has two types of selection: single selection (using Radios or Lists) or multiple selection (using Checkboxes or Toggles). This component opens up a Popover for the selection list and action. A filter can also be used for longer lists."
   },
+  "QImg": {
+    "prefix": "qimg",
+    "body": [
+      "<q-img",
+      "\t:src=\"${1:https://placeimg.com/500/300/nature}\"",
+      "\t:ratio=\"${2:16/9}\"",
+      "\tspinner-color=\"${3:primary}\"",
+      "\tspinner-size=\"${4:82px}\"",
+      "/>"
+    ],
+    "description": "The QImg component makes working with images (any picture format) easy and also adds a nice loading effect to it along with many other features (example: the ability to set an aspect ratio)."
+  },
   "QRating": {
     "prefix": "qrating",
     "body": [

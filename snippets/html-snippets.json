@@ -580,6 +580,26 @@
     ],
     "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
   },
+  "QMarkupTable": {
+    "prefix": "qmarkuptable",
+    "body": [
+      "<q-markup-table>",
+      "\t<thead>",
+      "\t\t<tr>",
+      "\t\t\t<th class=\"text-left\">${1:Dessert}</th>",
+      "\t\t\t<th class=\"text-right\">${2:Calories}</th>",
+      "\t\t</tr>",
+      "\t</thead>",
+      "\t<tbody>",
+      "\t\t<tr>",
+      "\t\t\t<td class=\"text-left\">${3:Frozen Yogurt}</td>",
+      "\t\t\t<td class=\"text-right\">${4:159}</td>",
+      "\t\t</tr>",
+      "\t</tbody>",
+      "</q-markup-table>"
+    ],
+    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
+  },
   "QStepper": {
     "prefix": "qstepper",
     "body": [

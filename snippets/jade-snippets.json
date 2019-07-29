@@ -653,6 +653,13 @@
     ],
     "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
   },
+  "QSpace": {
+    "prefix": "qspace",
+    "body": [
+      "q-space"
+    ],
+    "description": "The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element."
+  },
   "QScrollArea": {
     "prefix": "qscrollarea",
     "body": [

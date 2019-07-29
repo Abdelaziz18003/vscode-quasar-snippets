@@ -660,6 +660,16 @@
     ],
     "description": "The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element."
   },
+  "QSplitter": {
+    "prefix": "qsplitter",
+    "body": [
+      "q-splitter(v-model='${1:splitterModel}', style='${2:height: 400px}', ${3:horizontal})",
+      "\ttemplate(v-slot:before)",
+      "\ttemplate(v-slot:separator)",
+      "\ttemplate(v-slot:after)"
+    ],
+    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
+  },
   "QScrollArea": {
     "prefix": "qscrollarea",
     "body": [

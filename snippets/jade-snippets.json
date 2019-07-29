@@ -636,9 +636,9 @@
   "QSeparator": {
     "prefix": "qseparator",
     "body": [
-      "q-separator(spaced='${1:false}', inset='${2:false}')"
+      "q-separator(${1:spaced}, ${2:inset}, ${3:vertical}, ${4:dark})"
     ],
-    "description": "The QSeparator Component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
+    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
   },
   "QScrollArea": {
     "prefix": "qscrollarea",

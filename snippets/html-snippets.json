@@ -869,6 +869,22 @@
     ],
     "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
   },
+  "QTabPanels": {
+    "prefix": "qtabpanels",
+    "body": [
+      "<q-tab-panels v-model=\"${1:panel}\" animated class=\"shadow-2 rounded-borders\">",
+      "  <q-tab-panel name=\"${2:mails}\">",
+      "    <div class=\"text-h6\">Mails</div>",
+      "    Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "  </q-tab-panel>",
+      "  <q-tab-panel name=\"${3:alarms}\">",
+      "    <div class=\"text-h6\">Alarms</div>",
+      "    Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "  </q-tab-panel>",
+      "</q-tab-panels>"
+    ],
+    "description": "Tab panels are a way of displaying more information using less window real estate."
+  },
   "QScrollArea": {
     "prefix": "qscrollarea",
     "body": [

@@ -640,6 +640,19 @@
     ],
     "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
   },
+  "QSlideItem": {
+    "prefix": "qslideitem",
+    "body": [
+      "q-slide-item(@left='onLeft', @right='onRight')",
+      "\ttemplate(v-slot:left)",
+      "\ttemplate(v-slot:right)",
+      "\tq-item",
+      "\t\tq-item-section(avatar)",
+      "\t\t\tq-avatar(color='${3:primary}', text-color='${4:white}', icon='${5:bluetooth}')",
+      "\t\tq-item-section ${6:Icons only}"
+    ],
+    "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
+  },
   "QScrollArea": {
     "prefix": "qscrollarea",
     "body": [

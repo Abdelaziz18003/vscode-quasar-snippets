@@ -480,7 +480,7 @@
   "QMarkupTable": {
     "prefix": "qmarkuptable",
     "body": [
-      "tableg ${1:Dessert}${2:Calories}${3:Frozen Yogurt}${4:159}"
+      "q-markup-table ${1:Dessert}${2:Calories}${3:Frozen Yogurt}${4:159}"
     ],
     "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
   },
@@ -550,6 +550,16 @@
       "q-popup-edit(v-model='${1:model}') $0"
     ],
     "description": "QPopupEdit is a component that can be used to edit a value “in place”, like for example a cell in a QTable."
+  },
+  "QPopupProxy": {
+    "prefix": "qpopupproxy",
+    "body": [
+      "q-popup-proxy",
+      "\tq-banner",
+      "\t\ttemplate(v-slot:avatar)",
+      "\t\t| ${3:You have lost connection to the internet. This app is offline.}"
+    ],
+    "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
   },
   "QAjaxBar": {
     "prefix": "qajaxbar",

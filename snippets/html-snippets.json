@@ -713,6 +713,20 @@
     ],
     "description": "QPopupEdit is a component that can be used to edit a value “in place”, like for example a cell in a QTable."
   },
+  "QPopupProxy": {
+    "prefix": "qpopupproxy",
+    "body": [
+      "<q-popup-proxy>",
+      "\t<q-banner>",
+      "\t\t<template v-slot:avatar>",
+      "\t\t\t<q-icon name=\"${1:signal_wifi_off}\" color=\"${2:primary}\" />",
+      "\t\t</template>",
+      "\t\t${3:You have lost connection to the internet. This app is offline.}",
+      "\t</q-banner>",
+      "</q-popup-proxy>"
+    ],
+    "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
+  },
   "QAjaxBar": {
     "prefix": "qajaxbar",
     "body": [

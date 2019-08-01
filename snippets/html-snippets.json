@@ -20,12 +20,21 @@
     ],
     "description": "Layout footer"
   },
-  "QLayoutDrawer": {
-    "prefix": "qlayoutdrawer",
+  "QDrawer": {
+    "prefix": "qdrawer",
     "body": [
-      "<q-layout-drawer side=\"${1:left}\">$0</q-layout-drawer>"
+      "<q-layout-drawer",
+      "\tside=\"${1:left}\"",
+      "\tv-model=\"${2:drawerLeft}\"",
+      "\t${3:bordered}",
+      "\t:width=\"${4:200}\"",
+      "\t:breakpoint=\"${5:500}\"",
+      "\tcontent-class=\"${6:bg-grey-3}\"",
+      ">",
+      "\t$0",
+      "</q-layout-drawer>"
     ],
-    "description": "Layout drawer"
+    "description": "QDrawer is the sidebar part of your QLayout."
   },
   "QPage": {
     "prefix": "qpage",

@@ -20,12 +20,12 @@
     ],
     "description": "Layout footer"
   },
-  "QLayoutDrawer": {
-    "prefix": "qlayoutdrawer",
+  "QDrawer": {
+    "prefix": "qdrawer",
     "body": [
-      "q-layout-drawer(side='${1:left}') $0"
+      "q-layout-drawer(side='${1:left}', v-model='${2:drawerLeft}', ${3:bordered}, :width='${4:200}', :breakpoint='${5:500}', content-class='${6:bg-grey-3}') $0"
     ],
-    "description": "Layout drawer"
+    "description": "QDrawer is the sidebar part of your QLayout."
   },
   "QPage": {
     "prefix": "qpage",

@@ -125,6 +125,17 @@
     ],
     "description": "The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps."
   },
+  "QBreadcrumbs": {
+    "prefix": "qbreadcrumbs",
+    "body": [
+      "<q-breadcrumbs>",
+      "\t<q-breadcrumbs-el label=\"${1:Home}\" icon=\"${2:home}\" />",
+      "\t<q-breadcrumbs-el label=\"${3:Components}\" icon=\"${4:widgets}\" />",
+      "\t<q-breadcrumbs-el label=\"${5:Breadcrumbs}\" icon=\"${6:navigation}\" />",
+      "</q-breadcrumbs>"
+    ],
+    "description": "The QBreadcrumbs component is used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites. Most common use is it’s in a QToolbar, but it’s not limited to it."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -251,17 +262,6 @@
       "</q-context-menu>"
     ],
     "description": "This component allows you to display a context menu (popup) instead of the default browser one when user performs a right-click (or long tap on touch capable devices)."
-  },
-  "QBreadcrumbs": {
-    "prefix": "qbreadcrumbs",
-    "body": [
-      "<q-breadcrumbs>",
-      "\t<q-breadcrumbs-el label=\"${1:Home}\" icon=\"${2:home}\" />",
-      "\t<q-breadcrumbs-el label=\"${3:Components}\" icon=\"${4:widgets}\" />",
-      "\t<q-breadcrumbs-el label=\"${5:Breadcrumbs}\" icon=\"${6:navigation}\" />",
-      "</q-breadcrumbs>"
-    ],
-    "description": "Quasar Breadcrumbs is a component used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites."
   },
   "QPagination": {
     "prefix": "qpagination",

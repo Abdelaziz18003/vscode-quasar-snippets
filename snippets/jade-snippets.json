@@ -122,13 +122,6 @@
     ],
     "description": "QBtn is a button with a few extra useful features. For instance, it comes in two shapes: rectangle (default) and round. It also has the material ripple effect baked in (which can be disabled)."
   },
-  "QCircularProgress": {
-    "prefix": "qcircularprogress",
-    "body": [
-      "q-circular-progress.${7:q-ma-md}(${1:indeterminate}, size='${2:90px}', :thickness='${3:0.2}', color='${4:lime}', center-color='${5:grey-8}', track-color='${6:transparent}')"
-    ],
-    "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
-  },
   "QBtnGroup": {
     "prefix": "qbtngroup",
     "body": [
@@ -137,18 +130,25 @@
       "\t\tq-btn(label='${3:Two}', @click='${4:clickHandler2}')",
       "\t\t\tq-btn(label='${5:Three}', @click='${6:clickHandler3}')"
     ],
-    "description": "A group of QBtn components"
+    "description": "You can conveniently group QBtn and QBtnDropdown using QBtnGroup"
   },
   "QBtnDropdown": {
     "prefix": "qbtndropdown",
     "body": [
-      "q-btn-dropdown(label='${1:Button}')",
-      "\tq-list(link)",
-      "\t\tq-item",
-      "\t\t\tq-item-main",
-      "\t\t\t\tq-item-tile(label) ${2:Item}"
+      "q-btn-dropdown(label='${1:Button}', color='${2:primary}')",
+      "\tq-list",
+      "\t\tq-item(clickable, v-close-popup, @click='${3:onItemClick}')",
+      "\t\t\tq-item-section",
+      "\t\t\t\tq-item-label ${4:Photos}"
     ],
-    "description": "A convenient dropdown button. Goes very well with QList as dropdown content"
+    "description": "QBtnDropdown is a very convenient dropdown button. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
+  "QCircularProgress": {
+    "prefix": "qcircularprogress",
+    "body": [
+      "q-circular-progress.${7:q-ma-md}(${1:indeterminate}, size='${2:90px}', :thickness='${3:0.2}', color='${4:lime}', center-color='${5:grey-8}', track-color='${6:transparent}')"
+    ],
+    "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
   },
   "QToolbar": {
     "prefix": "qtoolbar",

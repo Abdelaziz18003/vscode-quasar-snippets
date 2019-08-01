@@ -143,6 +143,32 @@
     ],
     "description": "QBtn is a button with a few extra useful features. For instance, it comes in two shapes: rectangle (default) and round. It also has the material ripple effect baked in (which can be disabled)."
   },
+  "QBtnGroup": {
+    "prefix": "qbtngroup",
+    "body": [
+      "<q-btn-group>",
+      "\t<q-btn label=\"${1:One}\" @click=\"${2:clickHandler1}\"/>",
+      "\t<q-btn label=\"${3:Two}\" @click=\"${4:clickHandler2}\"/>",
+      "\t<q-btn label=\"${5:Three}\" @click=\"${6:clickHandler3}\"/>",
+      "</q-btn-group>"
+    ],
+    "description": "You can conveniently group QBtn and QBtnDropdown using QBtnGroup"
+  },
+  "QBtnDropdown": {
+    "prefix": "qbtndropdown",
+    "body": [
+      "<q-btn-dropdown label=\"${1:Button}\" color=\"${2:primary}\">",
+      "\t<q-list>",
+      "\t\t<q-item clickable v-close-popup @click=\"${3:onItemClick}\">",
+      "\t\t\t<q-item-section>",
+      "\t\t\t\t<q-item-label>${4:Photos}</q-item-label>",
+      "\t\t\t</q-item-section>",
+      "\t\t</q-item>",
+      "\t</q-list>",
+      "</q-btn-dropdown>"
+    ],
+    "description": "QBtnDropdown is a very convenient dropdown button. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -157,32 +183,6 @@
       "/>"
     ],
     "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
-  },
-  "QBtnGroup": {
-    "prefix": "qbtngroup",
-    "body": [
-      "<q-btn-group>",
-      "\t<q-btn label=\"${1:One}\" @click=\"${2:clickHandler1}\"/>",
-      "\t<q-btn label=\"${3:Two}\" @click=\"${4:clickHandler2}\"/>",
-      "\t<q-btn label=\"${5:Three}\" @click=\"${6:clickHandler3}\"/>",
-      "</q-btn-group>"
-    ],
-    "description": "A group of QBtn components"
-  },
-  "QBtnDropdown": {
-    "prefix": "qbtndropdown",
-    "body": [
-      "<q-btn-dropdown label=\"${1:Button}\">",
-      "\t<q-list link>",
-      "\t\t<q-item>",
-      "\t\t\t<q-item-main>",
-      "\t\t\t\t<q-item-tile label>${2:Item}</q-item-tile>",
-      "\t\t\t</q-item-main>",
-      "\t\t</q-item>",
-      "\t</q-list>",
-      "</q-btn-dropdown>"
-    ],
-    "description": "A convenient dropdown button. Goes very well with QList as dropdown content"
   },
   "QToolbar": {
     "prefix": "qtoolbar",

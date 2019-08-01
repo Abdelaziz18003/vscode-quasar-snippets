@@ -37,7 +37,7 @@
   "QPage": {
     "prefix": "qpage",
     "body": [
-      "q-page(:style-fn='${1:myTweak}') $0"
+      "q-page(:style-fn='${1:myTweak}', ${2:padding}) $0"
     ],
     "description": "A component that holds page content"
   },

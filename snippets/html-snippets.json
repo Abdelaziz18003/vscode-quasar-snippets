@@ -77,21 +77,12 @@
     ],
     "description": "A Floating Action Button (FAB) represents the primary action in an App Page. But, it’s not limited to only a single action. It can contain any number of sub-actions too"
   },
-  "QResizeObservable": {
-    "prefix": "qresizeobservable",
+  "QAjaxBar": {
+    "prefix": "qajaxbar",
     "body": [
-      "<div>",
-      "\t<q-resize-observable @resize=\"${1:onResize}\" />$0",
-      "</div>"
+      "<q-ajax-bar position=\"${1:top}\" size=\"${2:4px}\" color=\"${3:red}\" ${4:skip-hijack}/>"
     ],
-    "description": "A component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObservable) changes its size"
-  },
-  "QWindowResizeObservable": {
-    "prefix": "qwindowresizeobservable",
-    "body": [
-      "<q-window-resize-observable @resize=\"${1:onResize}\" />$0"
-    ],
-    "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
+    "description": "QAjaxBar is a component which displays a loading bar (like Youtube) whenever an Ajax call (regardless of Ajax library used) is in progress. It can be manually triggered as well."
   },
   "QAvatar": {
     "prefix": "qavatar",
@@ -625,6 +616,22 @@
     ],
     "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
   },
+  "QResizeObservable": {
+    "prefix": "qresizeobservable",
+    "body": [
+      "<div>",
+      "\t<q-resize-observable @resize=\"${1:onResize}\" />$0",
+      "</div>"
+    ],
+    "description": "A component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObservable) changes its size"
+  },
+  "QWindowResizeObservable": {
+    "prefix": "qwindowresizeobservable",
+    "body": [
+      "<q-window-resize-observable @resize=\"${1:onResize}\" />$0"
+    ],
+    "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
+  },
   "QStepper": {
     "prefix": "qstepper",
     "body": [
@@ -751,13 +758,6 @@
       "</q-popup-proxy>"
     ],
     "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
-  },
-  "QAjaxBar": {
-    "prefix": "qajaxbar",
-    "body": [
-      "<q-ajax-bar position=\"${1:top}\" size=\"${2:4px}\" color=\"${3:red}\" />"
-    ],
-    "description": "Ajax Bar is a component which displays a loading bar (like Youtube) whenever an Ajax call (regardless of Ajax library used) is in progress. It can be manually triggered as well."
   },
   "QInnerLoading": {
     "prefix": "qinnerloading",

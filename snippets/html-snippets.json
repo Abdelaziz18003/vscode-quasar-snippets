@@ -36,6 +36,13 @@
     ],
     "description": "QDrawer is the sidebar part of your QLayout."
   },
+  "QPageContainer": {
+    "prefix": "qpagecontainer",
+    "body": [
+      "<q-page-container>$0</q-page-container>"
+    ],
+    "description": "Usually, the QPageContainer is part of the Layout template (where it contains a <router-view /> child only), and its content goes into separate vue files under /src/pages."
+  },
   "QPage": {
     "prefix": "qpage",
     "body": [

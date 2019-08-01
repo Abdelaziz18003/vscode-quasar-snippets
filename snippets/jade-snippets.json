@@ -6,17 +6,17 @@
     ],
     "description": "The QLayout is a component designed to manage the entire window and wrap page content with elements such as a navigational bar or a drawer. Multiple pages can share the same QLayout, so the code is reusable, which is one of their key points."
   },
-  "QLayoutHeader": {
-    "prefix": "qlayoutheader",
+  "QHeader": {
+    "prefix": "qheader",
     "body": [
-      "q-layout-header(${1:reveal}, v-model='${2:header}') $0"
+      "q-header(v-model='${1:header}', ${2:reveal}, ${3:elevated}, ${4:bordered}) $0"
     ],
     "description": "Layout header"
   },
-  "QLayoutFooter": {
-    "prefix": "qlayoutfooter",
+  "QFooter": {
+    "prefix": "qfooter",
     "body": [
-      "q-layout-footer(${1:reveal}, v-model='${2:footer}') $0"
+      "q-footer(v-model='${1:footer}', ${2:reveal}, ${3:elevated}, ${4:bordered}) $0"
     ],
     "description": "Layout footer"
   },

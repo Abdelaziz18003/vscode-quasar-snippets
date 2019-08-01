@@ -115,26 +115,19 @@
     ],
     "description": "The QBreadcrumbs component is used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites. Most common use is it’s in a QToolbar, but it’s not limited to it."
   },
+  "QBtn": {
+    "prefix": "qbtn",
+    "body": [
+      "q-btn(color='${1:primary}', icon='${2:check}', label='${3:OK}', @click='${4:onClick}') $0"
+    ],
+    "description": "QBtn is a button with a few extra useful features. For instance, it comes in two shapes: rectangle (default) and round. It also has the material ripple effect baked in (which can be disabled)."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
       "q-circular-progress.${7:q-ma-md}(${1:indeterminate}, size='${2:90px}', :thickness='${3:0.2}', color='${4:lime}', center-color='${5:grey-8}', track-color='${6:transparent}')"
     ],
     "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
-  },
-  "QBtn 1": {
-    "prefix": "qbtn1",
-    "body": [
-      "q-btn(color='${1:primary}', icon='${2:check}', label='${3:OK}', @click='${4:onClick}') $0"
-    ],
-    "description": "A button with a few extra useful features"
-  },
-  "QBtn 2": {
-    "prefix": "qbtn2",
-    "body": [
-      "q-btn(color='${1:primary}', icon='${2:check}', label='${3:OK}', @click='${4:onClick}') $0"
-    ],
-    "description": "A button with a few extra useful features"
   },
   "QBtnGroup": {
     "prefix": "qbtngroup",

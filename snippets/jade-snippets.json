@@ -48,6 +48,14 @@
     ],
     "description": "The QPageSticky component helps in placing DOM elements / components wrapped by it into a static position within the content area of your QPage, no matter where the user scrolls."
   },
+  "QPageScroller": {
+    "prefix": "qpagescroller",
+    "body": [
+      "q-page-scroller(position='${1:bottom-right}', :scroll-offset='${2:150}', :offset='[${3:18, 18}]')",
+      "\tq-btn(fab, icon='keyboard_arrow_up', color='accent')"
+    ],
+    "description": "The QPageScroller component helps in placing DOM elements / components wrapped by it into a static position within the content area of your QPage, no matter where the user scrolls. It only appears after a scroll-offset (property) is reached. Once visible, the user can click on it to quickly get back to the top of the page via duration property."
+  },
   "QFab": {
     "prefix": "qfab",
     "body": [

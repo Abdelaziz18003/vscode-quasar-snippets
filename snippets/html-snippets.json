@@ -2,9 +2,9 @@
   "QLayout": {
     "prefix": "qlayout",
     "body": [
-      "<q-layout view=\"hHr LpR lFf\">$0</q-layout>"
+      "<q-layout view=\"${1:hHr LpR lFf}\" ${2:container}>$0</q-layout>"
     ],
-    "description": "Layouts are the elements that wrap page content, like a navigational bar or drawer. Multiple pages can share the same Layout, so the code is reusable, which is one of their key points."
+    "description": "The QLayout is a component designed to manage the entire window and wrap page content with elements such as a navigational bar or a drawer. Multiple pages can share the same QLayout, so the code is reusable, which is one of their key points."
   },
   "QLayoutHeader": {
     "prefix": "qlayoutheader",

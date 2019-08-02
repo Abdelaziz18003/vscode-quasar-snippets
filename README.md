@@ -27,7 +27,7 @@ This plugin is still in development. Please don't get upset if you don't find a 
 - Snippet body must include only the most used properties. Component doc "Basic Usage" section is enough in *most* cases.
 - Snippet description can be the doc description of the component if it is small or just a meaningful part of it if it is long.
 
-> Pug snippets are auto-generated using `vsc-snippets-html2pug` module (run `npm install` to install it). After adding a new HTML snippet just run `npm run pug` to update the Pug snippets file.
+- ***Important***: Pug snippets are auto-generated using `vsc-snippets-html2pug` module (run `npm install` to install it). After adding a new HTML snippet just run `npm run pug` to update the Pug snippets file.
 
 Again, your contributions of all sorts are welcome :heart:
 

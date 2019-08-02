@@ -204,6 +204,41 @@
     ],
     "description": "Cards can have some actions (buttons) attached to them."
   },
+  "QCarousel": {
+    "prefix": "qcarousel",
+    "body": [
+      "<q-carousel",
+      "\tv-model=\"slide\"",
+      "\ttransition-prev=\"jump-right\"",
+      "\ttransition-next=\"jump-left\"",
+      "\tswipeable",
+      "\tanimated",
+      "\tcontrol-color=\"white\"",
+      "\tprev-icon=\"arrow_left\"",
+      "\tnext-icon=\"arrow_right\"",
+      "\tnavigation-icon=\"radio_button_unchecked\"",
+      "\tnavigation",
+      "\tpadding",
+      "\tarrows",
+      "\theight=\"300px\"",
+      "\tclass=\"bg-purple text-white shadow-1 rounded-borders\"",
+      ">",
+      "\t<q-carousel-slide name=\"style\" class=\"column no-wrap flex-center\">",
+      "\t\t<q-icon name=\"style\" size=\"56px\" />",
+      "\t\t<div class=\"q-mt-md text-center\">",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "\t\t</div>",
+      "\t</q-carousel-slide>",
+      "\t<q-carousel-slide name=\"tv\" class=\"column no-wrap flex-center\">",
+      "\t\t<q-icon name=\"live_tv\" size=\"56px\" />",
+      "\t\t<div class=\"q-mt-md text-center\">",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "\t\t</div>",
+      "\t</q-carousel-slide>",
+      "</q-carousel>"
+    ],
+    "description": "The QCarousel component allows you to display more information with less real estate, using slides. Useful for creating Wizards or an image gallery too."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -758,20 +793,6 @@
       "<q-spinner${1:-gears} color=\"${2:teal-4}\" size=\"${3:40px}\" />"
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place."
-  },
-  "QCarousel": {
-    "prefix": "qcarousel",
-    "body": [
-      "<q-carousel class=\"${1:text-white}\">",
-      "\t<q-carousel-slide class=\"${2:bg-primary}\">",
-      "\t\t${3:Slide 1}",
-      "\t</q-carousel-slide>",
-      "\t<q-carousel-slide class=\"${4:bg-secondary}\">",
-      "\t\t${5:Slide 2}",
-      "\t</q-carousel-slide>",
-      "</q-carousel>"
-    ],
-    "description": "Quasar Carousel is a Vue Component which you can use to display more information with less real estate, using slides. Useful for creating Wizards too."
   },
   "QParallax": {
     "prefix": "qparallax",

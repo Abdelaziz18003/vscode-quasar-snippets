@@ -171,6 +171,19 @@
     ],
     "description": "Cards can have some actions (buttons) attached to them."
   },
+  "QCarousel": {
+    "prefix": "qcarousel",
+    "body": [
+      "q-carousel.bg-purple.text-white.shadow-1.rounded-borders(v-model='slide', transition-prev='jump-right', transition-next='jump-left', swipeable, animated, control-color='white', prev-icon='arrow_left', next-icon='arrow_right', navigation-icon='radio_button_unchecked', navigation, padding, arrows, height='300px')",
+      "\tq-carousel-slide.column.no-wrap.flex-center(name='style')",
+      "\t\tq-icon(name='style', size='56px')",
+      "\t\t\t.q-mt-md.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "\tq-carousel-slide.column.no-wrap.flex-center(name='tv')",
+      "\t\tq-icon(name='live_tv', size='56px')",
+      "\t\t\t.q-mt-md.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    ],
+    "description": "The QCarousel component allows you to display more information with less real estate, using slides. Useful for creating Wizards or an image gallery too."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -576,15 +589,6 @@
       "q-spinner(${1:-gears}, color='${2:teal-4}', size='${3:40px}')"
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place."
-  },
-  "QCarousel": {
-    "prefix": "qcarousel",
-    "body": [
-      "q-carousel.${1:text-white}",
-      "\tq-carousel-slide.${2:bg-primary} ${3:Slide 1}",
-      "\tq-carousel-slide.${4:bg-secondary} ${5:Slide 2}"
-    ],
-    "description": "Quasar Carousel is a Vue Component which you can use to display more information with less real estate, using slides. Useful for creating Wizards too."
   },
   "QParallax": {
     "prefix": "qparallax",

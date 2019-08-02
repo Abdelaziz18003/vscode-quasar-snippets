@@ -169,6 +169,41 @@
     ],
     "description": "QBtnDropdown is a very convenient dropdown button. Goes very well with QList as dropdown content, but it’s by no means limited to it."
   },
+  "QCard": {
+    "prefix": "qcard",
+    "body": [
+      "<q-card class=\"my-card\">",
+      "\t<img src=\"${1:https://cdn.quasar.dev/img/mountains.jpg}\">",
+      "\t<q-card-section>",
+      "\t\t<div class=\"text-h6\">${2:Our Changing Planet}</div>",
+      "\t\t<div class=\"text-subtitle2\">${3:by John Doe}</div>",
+      "\t</q-card-section>",
+      "\t<q-card-section>",
+      "\t\t${4:Lorem ipsum dolor sit amet, consectetur adipiscing elit}",
+      "\t</q-card-section>",
+      "</q-card>"
+    ],
+    "description": "The QCard component is a great way to display important pieces of grouped content. This pattern is quickly emerging as a core design pattern for Apps, website previews and email content. It assists the viewer by containing and organizing information, while also setting up predictable expectations."
+  },
+  "QCardSection": {
+    "prefix": "qcardsection",
+    "body": [
+      "<q-card-section>",
+      "\tLorem ipsum dolor sit amet",
+      "</q-card-section>"
+    ],
+    "description": "No Description yet."
+  },
+  "QCardActions": {
+    "prefix": "qcardactions",
+    "body": [
+      "<q-card-actions ${1:vertical} align=\"${2:center}\">",
+      "\t<q-btn flat label=\"${3:Action 1}\" />",
+      "\t<q-btn flat label=\"${4:Action 2}\" />",
+      "</q-card-actions>"
+    ],
+    "description": "Cards can have some actions (buttons) attached to them."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -478,61 +513,6 @@
       "<q-uploader :url=\"${1:url}\" />"
     ],
     "description": "Quasar supplies a way for you to upload files through QUploader component."
-  },
-  "QCard": {
-    "prefix": "qcard",
-    "body": [
-      "<q-card>",
-      "\t<q-card-title>",
-      "\t\t${1:Card Title}",
-      "\t</q-card-title>",
-      "\t<q-card-separator />",
-      "\t<q-card-main>",
-      "\t\t${2:Card Content}",
-      "\t</q-card-main>",
-      "</q-card>"
-    ],
-    "description": "Quasar Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for Apps."
-  },
-  "QCardTitle": {
-    "prefix": "qcardtitle",
-    "body": [
-      "<q-card-title>$1</q-card-title>"
-    ],
-    "description": "QCardTitle has three main areas (all are optional): title, subtitle (“subtitle” slot) and right side (“right” slot)."
-  },
-  "QCardMain": {
-    "prefix": "qcardmain",
-    "body": [
-      "<q-card-main>$1</q-card-main>"
-    ],
-    "description": "QCardMain  defines an area containing the main Card content, like description, details or anything you need outside of the other Card component’s purpose."
-  },
-  "QCardActions": {
-    "prefix": "qcardactions",
-    "body": [
-      "<q-card-actions ${1:vertical} align=\"${2:center}\">",
-      "\t<q-btn flat label=\"${3:Action 1}\" />",
-      "\t<q-btn flat label=\"${4:Action 2}\" />",
-      "</q-card-actions>"
-    ],
-    "description": "Cards can have some actions (buttons) attached to them."
-  },
-  "QCardMedia": {
-    "prefix": "qcardmedia",
-    "body": [
-      "<q-card-media>",
-      "\t<img src=\"${1:~assets/some-image.jpg}\">",
-      "</q-card-media>"
-    ],
-    "description": "Cards can also contain media elements: images, videos (through QVideo) or a parallax (through QParallax). This can be done through QCardMedia component, which supports an optional overlay too (for things like title and/or subtitle)."
-  },
-  "QCardSeparator": {
-    "prefix": "qcardseparator",
-    "body": [
-      "<q-card-separator />"
-    ],
-    "description": "You can choose to add a separator between Card components, which is basically a horizontal thin line, by adding QCardSeparator."
   },
   "QCollapsible": {
     "prefix": "qcollapsible",

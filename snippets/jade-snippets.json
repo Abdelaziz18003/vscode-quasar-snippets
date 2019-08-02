@@ -143,6 +143,34 @@
     ],
     "description": "QBtnDropdown is a very convenient dropdown button. Goes very well with QList as dropdown content, but it’s by no means limited to it."
   },
+  "QCard": {
+    "prefix": "qcard",
+    "body": [
+      "q-card.my-card",
+      "\timg(src='${1:https://cdn.quasar.dev/img/mountains.jpg}')",
+      "\tq-card-section",
+      "\t\t.text-h6 ${2:Our Changing Planet}",
+      "\t\t.text-subtitle2 ${3:by John Doe}",
+      "\tq-card-section ${4:Lorem ipsum dolor sit amet, consectetur adipiscing elit}"
+    ],
+    "description": "The QCard component is a great way to display important pieces of grouped content. This pattern is quickly emerging as a core design pattern for Apps, website previews and email content. It assists the viewer by containing and organizing information, while also setting up predictable expectations."
+  },
+  "QCardSection": {
+    "prefix": "qcardsection",
+    "body": [
+      "q-card-section Lorem ipsum dolor sit amet"
+    ],
+    "description": "No Description yet."
+  },
+  "QCardActions": {
+    "prefix": "qcardactions",
+    "body": [
+      "q-card-actions(${1:vertical}, align='${2:center}')",
+      "\tq-btn(flat, label='${3:Action 1}')",
+      "\t\tq-btn(flat, label='${4:Action 2}')"
+    ],
+    "description": "Cards can have some actions (buttons) attached to them."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [
@@ -384,54 +412,6 @@
       "q-uploader(:url='${1:url}')"
     ],
     "description": "Quasar supplies a way for you to upload files through QUploader component."
-  },
-  "QCard": {
-    "prefix": "qcard",
-    "body": [
-      "q-card",
-      "\tq-card-title ${1:Card Title}",
-      "\tq-card-separator",
-      "\t\tq-card-main ${2:Card Content}"
-    ],
-    "description": "Quasar Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for Apps."
-  },
-  "QCardTitle": {
-    "prefix": "qcardtitle",
-    "body": [
-      "q-card-title $1"
-    ],
-    "description": "QCardTitle has three main areas (all are optional): title, subtitle (“subtitle” slot) and right side (“right” slot)."
-  },
-  "QCardMain": {
-    "prefix": "qcardmain",
-    "body": [
-      "q-card-main $1"
-    ],
-    "description": "QCardMain  defines an area containing the main Card content, like description, details or anything you need outside of the other Card component’s purpose."
-  },
-  "QCardActions": {
-    "prefix": "qcardactions",
-    "body": [
-      "q-card-actions(${1:vertical}, align='${2:center}')",
-      "\tq-btn(flat, label='${3:Action 1}')",
-      "\t\tq-btn(flat, label='${4:Action 2}')"
-    ],
-    "description": "Cards can have some actions (buttons) attached to them."
-  },
-  "QCardMedia": {
-    "prefix": "qcardmedia",
-    "body": [
-      "q-card-media",
-      "\timg(src='${1:~assets/some-image.jpg}')"
-    ],
-    "description": "Cards can also contain media elements: images, videos (through QVideo) or a parallax (through QParallax). This can be done through QCardMedia component, which supports an optional overlay too (for things like title and/or subtitle)."
-  },
-  "QCardSeparator": {
-    "prefix": "qcardseparator",
-    "body": [
-      "q-card-separator"
-    ],
-    "description": "You can choose to add a separator between Card components, which is basically a horizontal thin line, by adding QCardSeparator."
   },
   "QCollapsible": {
     "prefix": "qcollapsible",

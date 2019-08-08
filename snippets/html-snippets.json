@@ -253,6 +253,13 @@
     ],
     "description": "Quasar supplies a chat component called QChatMessage which is really a chat entry that renders the data given by the props."
   },
+  "QChip": {
+    "prefix": "qchip",
+    "body": [
+      "<q-chip class=\"${1:glossy}\" icon=\"${2:directions}\" label=\"${3:Get directions}\" />"
+    ],
+    "description": "The QChip component is basically a simple UI block entity, representing for example more advanced underlying data, such as a contact, in a compact way."
+  },
   "QCircularProgress": {
     "prefix": "qcircularprogress",
     "body": [

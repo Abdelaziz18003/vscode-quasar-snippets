@@ -226,6 +226,13 @@
     ],
     "description": "The QDialog component is a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
   },
+  "QEditor": {
+    "prefix": "qeditor",
+    "body": [
+      "q-editor(v-model='${1:editor}', min-height='${2:5rem}', ${3:flat})"
+    ],
+    "description": "The QEditor component is a WYSIWYG (“what you see is what you get”) editor component that enables the user to write and even paste HTML."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -334,13 +341,6 @@
       "q-autocomplete(@search='${1:search}', :min-characters='${2:3}', @selected='${3:selected}')"
     ],
     "description": "A component that binds to the parent textfield (eg. QInput, QSearch, QChipsInput) and offers suggestions to the user, while the user is typing."
-  },
-  "QEditor": {
-    "prefix": "qeditor",
-    "body": [
-      "q-editor(v-model='${1:model}') $0"
-    ],
-    "description": "A WYSIWYG (“what you see is what you get”) editor component."
   },
   "QSearch": {
     "prefix": "qsearch",

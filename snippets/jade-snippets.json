@@ -205,6 +205,13 @@
     ],
     "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
   },
+  "QColor": {
+    "prefix": "qcolor",
+    "body": [
+      "q-color.my-picker(v-model='hex', inline)"
+    ],
+    "description": "The QColor component provides a method to input colors."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -306,20 +313,6 @@
       "q-chips-input(v-model='${1:model}', float-label='${2:Floating Label}')"
     ],
     "description": "A component that allows user to enter a group of text items, which is also editable in the form of quick deletion of the Chips in the list."
-  },
-  "QColor": {
-    "prefix": "qcolor",
-    "body": [
-      "q-color(v-model='${1:modelHex}', float-label='${2:Floating Label}')"
-    ],
-    "description": "A component that provides a method to input colors."
-  },
-  "QColorPicker": {
-    "prefix": "qcolorpicker",
-    "body": [
-      "q-color-picker(v-model='${1:modelHex}', float-label='${2:Floating Label}')"
-    ],
-    "description": "A component that provides a method to input colors."
   },
   "QAutocomplete": {
     "prefix": "qautocomplete",

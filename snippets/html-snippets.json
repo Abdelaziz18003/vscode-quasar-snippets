@@ -282,6 +282,24 @@
     ],
     "description": "The QColor component provides a method to input colors."
   },
+  "QDialog": {
+    "prefix": "qdialog",
+    "body": [
+      "<q-dialog v-model=\"${1:confirm}\" persistent>",
+      "\t<q-card>",
+      "\t\t<q-card-section class=\"row items-center\">",
+      "\t\t\t<q-avatar icon=\"signal_wifi_off\" color=\"primary\" text-color=\"white\" />",
+      "\t\t\t<span class=\"q-ml-sm\">You are currently not connected to any network.</span>",
+      "\t\t</q-card-section>",
+      "\t\t<q-card-actions align=\"right\">",
+      "\t\t\t<q-btn flat label=\"${2:Cancel}\" color=\"primary\" v-close-popup />",
+      "\t\t\t<q-btn flat label=\"${3:Turn on Wifi}\" color=\"primary\" v-close-popup />",
+      "\t\t</q-card-actions>",
+      "\t</q-card>",
+      "</q-dialog>"
+    ],
+    "description": "The QDialog component is a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -715,21 +733,6 @@
       "/>$0"
     ],
     "description": "Action Sheets slide up from the bottom edge of the device screen, and display a set of options with the ability to confirm or cancel an action. Action Sheets can sometimes be used as an alternative to menus, however, they should not be used for navigation."
-  },
-  "QDialog": {
-    "prefix": "qdialog",
-    "body": [
-      "<q-dialog",
-      "\tv-model=\"${1:customDialogModel}\"",
-      "\t${2:stack-buttons}",
-      "\t${3:prevent-close}",
-      "\t@ok=\"${4:onOk}\"",
-      "\t@cancel=\"${5:onCancel}\"",
-      "\t@show=\"${6:onShow}\"",
-      "\t@hide=\"${7:onHide}\"",
-      "/>"
-    ],
-    "description": "Quasar Dialogs are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
   },
   "QModal": {
     "prefix": "qmodal",

@@ -212,6 +212,20 @@
     ],
     "description": "The QColor component provides a method to input colors."
   },
+  "QDialog": {
+    "prefix": "qdialog",
+    "body": [
+      "q-dialog(v-model='${1:confirm}', persistent)",
+      "\tq-card",
+      "\t\tq-card-section.row.items-center",
+      "\t\t\tq-avatar(icon='signal_wifi_off', color='primary', text-color='white')",
+      "\t\t\t\tspan.q-ml-sm You are currently not connected to any network.",
+      "\t\tq-card-actions(align='right')",
+      "\t\t\tq-btn(flat, label='${2:Cancel}', color='primary', v-close-popup)",
+      "\t\t\t\tq-btn(flat, label='${3:Turn on Wifi}', color='primary', v-close-popup)"
+    ],
+    "description": "The QDialog component is a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -529,13 +543,6 @@
       "q-action-sheet(v-model='${1:actionSheet}', title='${2:Action Sheet}', @ok='${3:onOk}', @cancel='${4:onCancel}', @show='${5:onShow}', @hide='${6:onHide}', :actions='[ { label: '${7:Delete}', icon: '${8:delete}', color: '${9:red}', handler: ${10:deleteAction} } ]') $0"
     ],
     "description": "Action Sheets slide up from the bottom edge of the device screen, and display a set of options with the ability to confirm or cancel an action. Action Sheets can sometimes be used as an alternative to menus, however, they should not be used for navigation."
-  },
-  "QDialog": {
-    "prefix": "qdialog",
-    "body": [
-      "q-dialog(v-model='${1:customDialogModel}', ${2:stack-buttons}, ${3:prevent-close}, @ok='${4:onOk}', @cancel='${5:onCancel}', @show='${6:onShow}', @hide='${7:onHide}')"
-    ],
-    "description": "Quasar Dialogs are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
   },
   "QModal": {
     "prefix": "qmodal",

@@ -233,6 +233,13 @@
     ],
     "description": "The QEditor component is a WYSIWYG (“what you see is what you get”) editor component that enables the user to write and even paste HTML."
   },
+  "QExpansionItem": {
+    "prefix": "qexpansionitem",
+    "body": [
+      "q-expansion-item(${1:expand-separator}, icon='${2:perm_identity}', label='${3:Account settings}', caption='${4:John Doe}') $0"
+    ],
+    "description": "The QExpansionItem component allows the hiding of content that is not immediately relevant to the user. Think of them as accordion elements that expand when clicked on. It’s also known as a collapsible."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [

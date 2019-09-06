@@ -4,6 +4,15 @@ All notable changes to the "quasar-snippets" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.6.0] - 2019-09-06
+
+### added
+
+- All new v1.0 components
+
+### changed
+- update existing component until QItem to match new API
+
 ## [0.5.0] - 2019-04-29
 
 Adding Scrolling Components & Pug Templates Support

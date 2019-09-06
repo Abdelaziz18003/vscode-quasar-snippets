@@ -530,6 +530,39 @@
     ],
     "description": "The QLinearProgress component displays a colored loading bar. The bar can either have a determinate progress or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
   },
+  "QList": {
+    "prefix": "qlist",
+    "body": [
+      "<q-list bordered>",
+      "\t<q-item ${1:clickable} ${2:v-ripple}>",
+      "\t\t<q-item-section ${3:avatar}>",
+      "\t\t\t<q-icon color=\"${4:primary}\" name=\"${5:bluetooth}\" />",
+      "\t\t</q-item-section>",
+      "\t\t<q-item-section>Icon as avatar</q-item-section>",
+      "\t</q-item>",
+      "</q-list>"
+    ],
+    "description": "The QList and QItem are a group of components which can work together to present multiple line items vertically as a single continuous element."
+  },
+  "QItem": {
+    "prefix": "qitem",
+    "body": [
+      "<q-item>",
+      "\t<q-item-section top avatar>",
+      "\t\t<q-avatar color=\"primary\" text-color=\"white\" icon=\"bluetooth\" />",
+      "\t</q-item-section>",
+      "\t<q-item-section>",
+      "\t\t<q-item-label>Single line item</q-item-label>",
+      "\t\t<q-item-label caption lines=\"2\">Secondary line text.</q-item-label>",
+      "\t</q-item-section>",
+      "\t<q-item-section side top>",
+      "\t\t<q-item-label caption>5 min ago</q-item-label>",
+      "\t\t<q-icon name=\"star\" color=\"yellow\" />",
+      "\t</q-item-section>",
+      "</q-item>"
+    ],
+    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -670,38 +703,6 @@
       "/>"
     ],
     "description": "QTable is a Component that allows you to display data in a tabular manner."
-  },
-  "QList": {
-    "prefix": "qlist",
-    "body": [
-      "<q-list ${1:highlight}>",
-      "\t<q-list-header>${2:Recent chats}</q-list-header>",
-      "\t<q-item>",
-      "\t\t<q-item-side avatar=\"${3:statics/linux-avatar.png}\" />",
-      "\t\t<q-item-main label=\"${4:Jim Doe}\" />",
-      "\t\t<q-item-side right icon=\"${5:chat_bubble}\" />",
-      "\t</q-item>",
-      "</q-list>"
-    ],
-    "description": "Quasar Lists and List Items are a group of components which can work together to present multiple line items vertically as a single continuous element."
-  },
-  "QItem": {
-    "prefix": "qitem",
-    "body": [
-      "<q-item tag=\"${1:label}\">",
-      "\t<q-item-side>",
-      "\t\t${2:<q-checkbox v-model=\"checkboxModel\" />}",
-      "\t</q-item-side>",
-      "\t<q-item-main>",
-      "\t\t<q-item-tile label>${3:Notifications}</q-item-tile>",
-      "\t\t<q-item-tile sublabel>${4:Notify me about updates}</q-item-tile>",
-      "\t</q-item-main>",
-      "\t<q-item-side right>",
-      "\t\t${5:<q-item-tile icon=\"chat_bubble\" color=\"green\" />}",
-      "\t</q-item-side>",
-      "</q-item>"
-    ],
-    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
   },
   "QMarkupTable": {
     "prefix": "qmarkuptable",

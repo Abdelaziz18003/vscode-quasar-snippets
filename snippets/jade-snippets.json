@@ -381,6 +381,32 @@
     ],
     "description": "The QLinearProgress component displays a colored loading bar. The bar can either have a determinate progress or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
   },
+  "QList": {
+    "prefix": "qlist",
+    "body": [
+      "q-list(bordered)",
+      "\tq-item(${1:clickable}, ${2:v-ripple})",
+      "\t\tq-item-section(${3:avatar})",
+      "\t\t\tq-icon(color='${4:primary}', name='${5:bluetooth}')",
+      "\t\tq-item-section Icon as avatar"
+    ],
+    "description": "The QList and QItem are a group of components which can work together to present multiple line items vertically as a single continuous element."
+  },
+  "QItem": {
+    "prefix": "qitem",
+    "body": [
+      "q-item",
+      "\tq-item-section(top, avatar)",
+      "\t\tq-avatar(color='primary', text-color='white', icon='bluetooth')",
+      "\tq-item-section",
+      "\t\tq-item-label Single line item",
+      "\t\tq-item-label(caption, lines='2') Secondary line text.",
+      "\tq-item-section(side, top)",
+      "\t\tq-item-label(caption) 5 min ago",
+      "\t\tq-icon(name='star', color='yellow')"
+    ],
+    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -500,34 +526,6 @@
       "q-table(title='${1:Table Title}', :data='${2:tableData}', :columns='${3:columns}', row-key='${4:name}')"
     ],
     "description": "QTable is a Component that allows you to display data in a tabular manner."
-  },
-  "QList": {
-    "prefix": "qlist",
-    "body": [
-      "q-list(${1:highlight})",
-      "\tq-list-header ${2:Recent chats}",
-      "\tq-item",
-      "\t\tq-item-side(avatar='${3:statics/linux-avatar.png}')",
-      "\t\t\tq-item-main(label='${4:Jim Doe}')",
-      "\t\t\t\tq-item-side(right, icon='${5:chat_bubble}')"
-    ],
-    "description": "Quasar Lists and List Items are a group of components which can work together to present multiple line items vertically as a single continuous element."
-  },
-  "QItem": {
-    "prefix": "qitem",
-    "body": [
-      "q-item(tag='${1:label}')",
-      "\tq-item-side",
-      "\t\t| ${2:",
-      "\t\tq-checkbox(v-model='checkboxModel') }",
-      "\tq-item-main",
-      "\t\tq-item-tile(label) ${3:Notifications}",
-      "\t\tq-item-tile(sublabel) ${4:Notify me about updates}",
-      "\tq-item-side(right)",
-      "\t\t| ${5:",
-      "\t\tq-item-tile(icon='chat_bubble', color='green') }"
-    ],
-    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
   },
   "QMarkupTable": {
     "prefix": "qmarkuptable",

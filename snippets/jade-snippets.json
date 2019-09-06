@@ -335,6 +335,45 @@
     ],
     "description": "The QDate component provides a method to input date. Currently it supports Gregorian (default) and Persian calendars."
   },
+  "QIcon": {
+    "prefix": "qicon",
+    "body": [
+      "q-icon(name='${1:print}')"
+    ],
+    "description": "The QIcon component allows you to easily insert icons within other components or any other area of your pages."
+  },
+  "QImg": {
+    "prefix": "qimg",
+    "body": [
+      "q-img(:src='${1:https://placeimg.com/500/300/nature}', :ratio='${2:16/9}', spinner-color='${3:primary}', spinner-size='${4:82px}')"
+    ],
+    "description": "The QImg component makes working with images (any picture format) easy and also adds a nice loading effect to it along with many other features (example: the ability to set an aspect ratio)."
+  },
+  "QInfiniteScroll": {
+    "prefix": "qinfinitescroll",
+    "body": [
+      "q-infinite-scroll(@load='onLoad', :offset='250')",
+      "\t.caption(v-for='(item, index) in items', :key='index')",
+      "\t\tp Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\ttemplate(v-slot:loading)"
+    ],
+    "description": "The QInfiteScroll component allows you to load new content as the user scrolls the page."
+  },
+  "QInnerLoading": {
+    "prefix": "qinnerloading",
+    "body": [
+      "q-inner-loading(:showing='${1:visible}')",
+      "\tq-spinner-gears(size='${2:50px}', color='${3:primary}')"
+    ],
+    "description": "The QInnerLoading component allows you to add a progress animation within a component. Much like the Loading Plugin, it’s purpose is to offer visual confirmation to the user that some process is happening in the background, which takes an excessive amount of time."
+  },
+  "QKnob": {
+    "prefix": "qknob",
+    "body": [
+      "q-knob.${9:q-ma-md}(:min='${1:5}', :max='${2:10}', v-model='${3:value1}', ${4:show-value}, size='${5:50px}', :thickness='${6:0.22}', color='${7:teal}', track-color='${8:grey-3}')"
+    ],
+    "description": "The QKnob component is used to take a number input from the user through mouse/touch panning. It is based on QCircularProgress and inherits all its properties and behavior."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -426,26 +465,12 @@
     ],
     "description": "A component that offers the user an input field with additional features for searching purposes."
   },
-  "QImg": {
-    "prefix": "qimg",
-    "body": [
-      "q-img(:src='${1:https://placeimg.com/500/300/nature}', :ratio='${2:16/9}', spinner-color='${3:primary}', spinner-size='${4:82px}')"
-    ],
-    "description": "The QImg component makes working with images (any picture format) easy and also adds a nice loading effect to it along with many other features (example: the ability to set an aspect ratio)."
-  },
   "QRating": {
     "prefix": "qrating",
     "body": [
       "q-rating(v-model='${1:ratingModel}', :max='${2:3}')"
     ],
     "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
-  },
-  "QKnob": {
-    "prefix": "qknob",
-    "body": [
-      "q-knob(v-model='${1:model}', :min='${2:min}', :max='${3:max}', :placeholder='${4:'$ ' + model}')"
-    ],
-    "description": "Quasar Knob is another way of making the user select a Number value from a predefined range. With optional steps included."
   },
   "QUploader": {
     "prefix": "quploader",
@@ -589,14 +614,6 @@
     ],
     "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
   },
-  "QInnerLoading": {
-    "prefix": "qinnerloading",
-    "body": [
-      "q-inner-loading(:visible='${1:visible}')",
-      "\tq-spinner-gears(size='${2:50px}', color='${3:primary}')"
-    ],
-    "description": "The QInnerLoading component allows you to add a progress animation within a component."
-  },
   "QProgress": {
     "prefix": "qprogress",
     "body": [
@@ -635,15 +652,6 @@
       "q-scroll-observable(@scroll='${1:userHasScrolled}')"
     ],
     "description": "QScrollObservable is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
-  },
-  "QInfiniteScroll": {
-    "prefix": "qinfinitescroll",
-    "body": [
-      "q-infinite-scroll(:handler='${1:loadMore}')",
-      "\tdiv(v-for='${2:item} in ${3:items}') $0",
-      "\tq-spinner-dots(slot='message', :size='40')"
-    ],
-    "description": "When you want to progressively load new content as the user scrolls down your Page, use QInfiniteScroll component."
   },
   "QSeparator": {
     "prefix": "qseparator",

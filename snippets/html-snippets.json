@@ -517,6 +517,19 @@
     ],
     "description": "The QKnob component is used to take a number input from the user through mouse/touch panning. It is based on QCircularProgress and inherits all its properties and behavior."
   },
+  "QLinearProgress": {
+    "prefix": "qlinearprogress",
+    "body": [
+      "<q-linear-progress",
+      "\t:value=\"${1:progress}\"",
+      "\t${2:rounded}",
+      "\tcolor=\"${3:purple}\"",
+      "\ttrack-color=\"${4:orange}\"",
+      "\tclass=\"${5:q-mt-sm}\"",
+      "/>"
+    ],
+    "description": "The QLinearProgress component displays a colored loading bar. The bar can either have a determinate progress or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [

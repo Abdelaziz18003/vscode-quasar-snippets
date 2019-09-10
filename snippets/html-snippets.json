@@ -563,6 +563,43 @@
     ],
     "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
   },
+  "QMarkupTable": {
+    "prefix": "qmarkuptable",
+    "body": [
+      "<q-markup-table>",
+      "\t<thead>",
+      "\t\t<tr>",
+      "\t\t\t<th class=\"text-left\">${1:Dessert}</th>",
+      "\t\t\t<th class=\"text-right\">${2:Calories}</th>",
+      "\t\t</tr>",
+      "\t</thead>",
+      "\t<tbody>",
+      "\t\t<tr>",
+      "\t\t\t<td class=\"text-left\">${3:Frozen Yogurt}</td>",
+      "\t\t\t<td class=\"text-right\">${4:159}</td>",
+      "\t\t</tr>",
+      "\t</tbody>",
+      "</q-markup-table>"
+    ],
+    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
+  },
+  "QMenu": {
+    "prefix": "qmenu",
+    "body": [
+      "<q-menu>",
+      "\t<q-list style=\"min-width: 100px\">",
+      "\t\t<q-item clickable v-close-popup>",
+      "\t\t\t<q-item-section>New tab</q-item-section>",
+      "\t\t</q-item>",
+      "\t\t<q-separator />",
+      "\t\t<q-item clickable v-close-popup>",
+      "\t\t\t<q-item-section>New incognito tab</q-item-section>",
+      "\t\t</q-item>",
+      "\t</q-list>",
+      "</q-menu>"
+    ],
+    "description": "The QMenu component is a convenient way to show menus. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -703,26 +740,6 @@
       "/>"
     ],
     "description": "QTable is a Component that allows you to display data in a tabular manner."
-  },
-  "QMarkupTable": {
-    "prefix": "qmarkuptable",
-    "body": [
-      "<q-markup-table>",
-      "\t<thead>",
-      "\t\t<tr>",
-      "\t\t\t<th class=\"text-left\">${1:Dessert}</th>",
-      "\t\t\t<th class=\"text-right\">${2:Calories}</th>",
-      "\t\t</tr>",
-      "\t</thead>",
-      "\t<tbody>",
-      "\t\t<tr>",
-      "\t\t\t<td class=\"text-left\">${3:Frozen Yogurt}</td>",
-      "\t\t\t<td class=\"text-right\">${4:159}</td>",
-      "\t\t</tr>",
-      "\t</tbody>",
-      "</q-markup-table>"
-    ],
-    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
   },
   "QResizeObservable": {
     "prefix": "qresizeobservable",

@@ -407,6 +407,26 @@
     ],
     "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
   },
+  "QMarkupTable": {
+    "prefix": "qmarkuptable",
+    "body": [
+      "q-markup-table ${1:Dessert}${2:Calories}${3:Frozen Yogurt}${4:159}"
+    ],
+    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
+  },
+  "QMenu": {
+    "prefix": "qmenu",
+    "body": [
+      "q-menu",
+      "\tq-list(style='min-width: 100px')",
+      "\t\tq-item(clickable, v-close-popup)",
+      "\t\t\tq-item-section New tab",
+      "\t\tq-separator",
+      "\t\t\tq-item(clickable, v-close-popup)",
+      "\t\t\t\tq-item-section New incognito tab"
+    ],
+    "description": "The QMenu component is a convenient way to show menus. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -526,13 +546,6 @@
       "q-table(title='${1:Table Title}', :data='${2:tableData}', :columns='${3:columns}', row-key='${4:name}')"
     ],
     "description": "QTable is a Component that allows you to display data in a tabular manner."
-  },
-  "QMarkupTable": {
-    "prefix": "qmarkuptable",
-    "body": [
-      "q-markup-table ${1:Dessert}${2:Calories}${3:Frozen Yogurt}${4:159}"
-    ],
-    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
   },
   "QResizeObservable": {
     "prefix": "qresizeobservable",

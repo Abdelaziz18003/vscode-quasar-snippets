@@ -600,6 +600,15 @@
     ],
     "description": "The QMenu component is a convenient way to show menus. Goes very well with QList as dropdown content, but it’s by no means limited to it."
   },
+  "QNoSsr": {
+    "prefix": "qnossr",
+    "body": [
+      "<q-no-ssr>",
+      "\t<div>This won't be rendered on server</div>",
+      "</q-no-ssr>"
+    ],
+    "description": "The QNoSsr component makes sense only if you are creating a SSR website/app. It avoids rendering its content on the server and leaves that for client only. Useful when you got code that is not isomorphic and can only run on the client side, in a browser."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [

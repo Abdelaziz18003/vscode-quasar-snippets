@@ -609,6 +609,20 @@
     ],
     "description": "The QNoSsr component makes sense only if you are creating a SSR website/app. It avoids rendering its content on the server and leaves that for client only. Useful when you got code that is not isomorphic and can only run on the client side, in a browser."
   },
+  "QResizeObservable": {
+    "prefix": "qresizeobservable",
+    "body": [
+      "<q-resize-observable @resize=\"${1:onResize}\" />$0"
+    ],
+    "description": "QResizeObserver is a Quasar component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObserver) changes its size (width and/or height)."
+  },
+  "QScrollObservable": {
+    "prefix": "qscrollobservable",
+    "body": [
+      "<q-scroll-observable @scroll=\"${1:onScroll}\" />"
+    ],
+    "description": "QScrollObserver is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -749,15 +763,6 @@
       "/>"
     ],
     "description": "QTable is a Component that allows you to display data in a tabular manner."
-  },
-  "QResizeObservable": {
-    "prefix": "qresizeobservable",
-    "body": [
-      "<div>",
-      "\t<q-resize-observable @resize=\"${1:onResize}\" />$0",
-      "</div>"
-    ],
-    "description": "A component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObservable) changes its size"
   },
   "QWindowResizeObservable": {
     "prefix": "qwindowresizeobservable",
@@ -915,13 +920,6 @@
       "/>"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QScrollObservable": {
-    "prefix": "qscrollobservable",
-    "body": [
-      "<q-scroll-observable @scroll=\"${1:userHasScrolled}\" />"
-    ],
-    "description": "QScrollObservable is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
   },
   "QSeparator": {
     "prefix": "qseparator",

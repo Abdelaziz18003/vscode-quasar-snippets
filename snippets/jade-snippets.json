@@ -463,6 +463,14 @@
     ],
     "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
   },
+  "QPopupEdit": {
+    "prefix": "qpopupedit",
+    "body": [
+      "q-popup-edit(v-model='${1:props.row.name}', title='${2:Edit the Name}')",
+      "\tq-input(v-model='${3:props.row.name}', ${4:dense}, ${5:autofocus})"
+    ],
+    "description": "The QPopupEdit component can be used to edit a value “in place”, like for example a cell in QTable. By default, a cell is displayed as a String, then if you are using QPopupEdit and a user clicks/taps on the table cell, a popup will open where the user will be able to edit the value using a textfield."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -635,13 +643,6 @@
       "q-tooltip(v-model='${1:showing}') $0"
     ],
     "description": "QTooltip should be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the Tooltip will appear."
-  },
-  "QPopupEdit": {
-    "prefix": "qpopupedit",
-    "body": [
-      "q-popup-edit(v-model='${1:model}') $0"
-    ],
-    "description": "QPopupEdit is a component that can be used to edit a value “in place”, like for example a cell in a QTable."
   },
   "QPopupProxy": {
     "prefix": "qpopupproxy",

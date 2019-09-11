@@ -449,6 +449,20 @@
     ],
     "description": "QScrollObserver is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
   },
+  "QPagination": {
+    "prefix": "qpagination",
+    "body": [
+      "q-pagination(v-model='${1:current}', :max='${2:6}')"
+    ],
+    "description": "The QPagination component is available for whenever a pagination system is required. It offers the user a simple UI for moving between items or pages."
+  },
+  "QParallax": {
+    "prefix": "qparallax",
+    "body": [
+      "q-parallax(src='${1:https://cdn.quasar.dev/img/parallax2.jpg}', :speed='${2:0.5}') $0"
+    ],
+    "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -511,13 +525,6 @@
       "\t\t\tq-item-main(label='${7:Other Label}', sublabel='${8:Other Value}')"
     ],
     "description": "This component allows you to display a context menu (popup) instead of the default browser one when user performs a right-click (or long tap on touch capable devices)."
-  },
-  "QPagination": {
-    "prefix": "qpagination",
-    "body": [
-      "q-pagination(v-model='${1:page}', :max='${2:6}')"
-    ],
-    "description": "The Quasar Pagination component is available for whenever a pagination system is required. It offers the user a simple UI to help you in moving between pages/items."
   },
   "QChipsInput": {
     "prefix": "qchipsinput",
@@ -659,17 +666,6 @@
       "q-spinner(${1:-gears}, color='${2:teal-4}', size='${3:40px}')"
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place."
-  },
-  "QParallax": {
-    "prefix": "qparallax",
-    "body": [
-      "q-parallax",
-      "\timg(slot='media', src='${1:assets/parallax2.jpg}')",
-      "\t|  ${2:",
-      "\th1 Slot",
-      "\t| }"
-    ],
-    "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
   },
   "QVideo": {
     "prefix": "qvideo",

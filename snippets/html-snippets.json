@@ -651,6 +651,29 @@
     ],
     "description": "The QPopupEdit component can be used to edit a value “in place”, like for example a cell in QTable. By default, a cell is displayed as a String, then if you are using QPopupEdit and a user clicks/taps on the table cell, a popup will open where the user will be able to edit the value using a textfield."
   },
+  "QPopupProxy": {
+    "prefix": "qpopupproxy",
+    "body": [
+      "<q-popup-proxy>",
+      "\t<q-banner>",
+      "\t\t<template v-slot:avatar>",
+      "\t\t\t<q-icon name=\"${1:signal_wifi_off}\" color=\"${2:primary}\" />",
+      "\t\t</template>",
+      "\t\t${3:You have lost connection to the internet. This app is offline.}",
+      "\t</q-banner>",
+      "</q-popup-proxy>"
+    ],
+    "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
+  },
+  "QPullToRefresh": {
+    "prefix": "qpulltorefresh",
+    "body": [
+      "<q-pull-to-refresh @refresh=\"${1:refresh}\" color=\"primary\">",
+      "\t$0",
+      "</q-pull-to-refresh>"
+    ],
+    "description": "The QPullToRefresh is a component that allows the user to pull down in order to refresh page content (or retrieve the newest content)."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -697,15 +720,6 @@
       "<q-route-tab icon=\"${1:icon_name}\" to=\"${2:route}\" slot=\"${3:slot}\" ${4:exact}/>"
     ],
     "description": "You will, in most cases, want to use tabs within a layout component. Below is an example of how this would be done."
-  },
-  "QPullToRefresh": {
-    "prefix": "qpulltorefresh",
-    "body": [
-      "<q-pull-to-refresh :handler=\"${1:refresher}\">",
-      "\t$0",
-      "</q-pull-to-refresh>"
-    ],
-    "description": "When you want to allow the user to refresh the content or retrieve the newest content."
   },
   "QContextMenu": {
     "prefix": "qcontextmenu",
@@ -880,20 +894,6 @@
       "</q-tooltip>"
     ],
     "description": "QTooltip should be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the Tooltip will appear."
-  },
-  "QPopupProxy": {
-    "prefix": "qpopupproxy",
-    "body": [
-      "<q-popup-proxy>",
-      "\t<q-banner>",
-      "\t\t<template v-slot:avatar>",
-      "\t\t\t<q-icon name=\"${1:signal_wifi_off}\" color=\"${2:primary}\" />",
-      "\t\t</template>",
-      "\t\t${3:You have lost connection to the internet. This app is offline.}",
-      "\t</q-banner>",
-      "</q-popup-proxy>"
-    ],
-    "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
   },
   "QProgress": {
     "prefix": "qprogress",

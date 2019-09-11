@@ -674,6 +674,17 @@
     ],
     "description": "The QPullToRefresh is a component that allows the user to pull down in order to refresh page content (or retrieve the newest content)."
   },
+  "QRating": {
+    "prefix": "qrating",
+    "body": [
+      "<q-rating",
+      "  v-model=\"${1:ratingModel}\"",
+      "  size=\"${2:1.5em}\"",
+      "  icon=\"${3:star}\"",
+      "/>"
+    ],
+    "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -761,13 +772,6 @@
       "<q-search v-model=\"${1:search}\" icon=\"${2:place}\" float-label=\"${2:search for a place}\" ${3:clearable} />"
     ],
     "description": "A component that offers the user an input field with additional features for searching purposes."
-  },
-  "QRating": {
-    "prefix": "qrating",
-    "body": [
-      "<q-rating v-model=\"${1:ratingModel}\" :max=\"${2:3}\" />"
-    ],
-    "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
   },
   "QUploader": {
     "prefix": "quploader",

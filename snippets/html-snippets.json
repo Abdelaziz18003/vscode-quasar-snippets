@@ -685,6 +685,24 @@
     ],
     "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
   },
+  "QScrollArea": {
+    "prefix": "qscrollarea",
+    "body": [
+      "<q-scroll-area style=\"width: ${1:400px}; height: ${2:200px};\">",
+      "\t<div v-for=\"${3:n} in ${4:10}\">",
+      "\t\tLorem ipsum dolor sit amet, consectetur adipisicing",
+      "\t</div>",
+      "</q-scroll-area>"
+    ],
+    "description": "The QScrollArea component offers a neat way of customizing the scrollbars by encapsulating your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
+  },
+  "QSeparator": {
+    "prefix": "qseparator",
+    "body": [
+      "<q-separator ${1:spaced} ${2:inset} ${3:vertical} ${4:dark} />"
+    ],
+    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -927,13 +945,6 @@
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
   },
-  "QSeparator": {
-    "prefix": "qseparator",
-    "body": [
-      "<q-separator ${1:spaced} ${2:inset} ${3:vertical} ${4:dark} />"
-    ],
-    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
-  },
   "QSlideItem": {
     "prefix": "qslideitem",
     "body": [
@@ -997,16 +1008,5 @@
       "</q-tab-panels>"
     ],
     "description": "Tab panels are a way of displaying more information using less window real estate."
-  },
-  "QScrollArea": {
-    "prefix": "qscrollarea",
-    "body": [
-      "<q-scroll-area style=\"width: ${1:400px}; height: ${2:100px};\">",
-      "\t<div v-for=\"${3:n} in ${4:10}\">",
-      "\t\tLorem ipsum dolor sit amet, consectetur adipisicing",
-      "\t</div>",
-      "</q-scroll-area>"
-    ],
-    "description": "Quasar offers a neat way of customizing the scrollbars with the help of QScrollArea component which can encapsulate your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
   }
 }

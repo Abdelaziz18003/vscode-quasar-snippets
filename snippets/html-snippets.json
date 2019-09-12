@@ -737,12 +737,31 @@
     ],
     "description": "QSlideTransition slides the DOM element (or component) up or down, based on its visibility: works alongside v-show and v-if on a single element, similar to Vue’s Transition component with the only difference being that it’s not a group transition too (it only applies to one DOM element or component)."
   },
+
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
       "<q-toolbar color=\"${1:primary}\">$0</q-toolbar>"
     ],
     "description": "A Quasar Layout can have headers and/or footers (also called “marginals”) and this is a great place to use Toolbars, but note that you can also place Toolbars anywhere else you want. One QToolbar will represent a row in your marginals, usually used for navigation buttons and a title (but not limited to only this)."
+  },
+  "QSpace": {
+    "prefix": "qspace",
+    "body": [
+      "<q-space />"
+    ],
+    "description": "The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element."
+  },
+  "QSpinner": {
+    "prefix": "qspinner",
+    "body": [
+      "<q-spinner-${1:gears}",
+      "\tcolor=\"${2:primary}\"",
+      "\tsize=\"${3:3rem}\"",
+      "\t:thickness=\"${4:5}\"",
+      "/>"
+    ],
+    "description": "A Spinner is used to show the user a timely process is currently taking place. It is an important UX feature, which gives the user the feeling the system is continuing to work for longer term activities, like grabbing data from the server or some heavy calculations."
   },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
@@ -962,13 +981,6 @@
     ],
     "description": "A Progress bar is used to show a process is being worked on, so the user isn’t staring at a static page, even though the system is working in the background."
   },
-  "QSpinner": {
-    "prefix": "qspinner",
-    "body": [
-      "<q-spinner${1:-gears} color=\"${2:teal-4}\" size=\"${3:40px}\" />"
-    ],
-    "description": "A Spinner is used to show the user a timely process is currently taking place."
-  },
   "QVideo": {
     "prefix": "qvideo",
     "body": [
@@ -978,13 +990,6 @@
       "/>"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QSpace": {
-    "prefix": "qspace",
-    "body": [
-      "<q-space />"
-    ],
-    "description": "The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element."
   },
   "QSplitter": {
     "prefix": "qsplitter",

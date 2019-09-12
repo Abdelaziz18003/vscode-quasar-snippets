@@ -503,6 +503,26 @@
     ],
     "description": "The QScrollArea component offers a neat way of customizing the scrollbars by encapsulating your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
   },
+  "QSeparator": {
+    "prefix": "qseparator",
+    "body": [
+      "q-separator(${1:spaced}, ${2:inset}, ${3:vertical}, ${4:dark})"
+    ],
+    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
+  },
+  "QSlideItem": {
+    "prefix": "QSlideItem",
+    "body": [
+      "q-slide-item(@left='${1:onLeft}', @right='${2:onRight}')",
+      "\ttemplate(v-slot:left)",
+      "\ttemplate(v-slot:right)",
+      "\tq-item",
+      "\t\tq-item-section(avatar)",
+      "\t\t\tq-avatar(color='${5:primary}', text-color='${6:white}', icon='${7:bluetooth}')",
+      "\t\tq-item-section ${8:Icons only}"
+    ],
+    "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [
@@ -682,26 +702,6 @@
       "q-video(src='${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}', style=':width: ${2:853px}; height: ${3:480px}')"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QSeparator": {
-    "prefix": "qseparator",
-    "body": [
-      "q-separator(${1:spaced}, ${2:inset}, ${3:vertical}, ${4:dark})"
-    ],
-    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
-  },
-  "QSlideItem": {
-    "prefix": "qslideitem",
-    "body": [
-      "q-slide-item(@left='onLeft', @right='onRight')",
-      "\ttemplate(v-slot:left)",
-      "\ttemplate(v-slot:right)",
-      "\tq-item",
-      "\t\tq-item-section(avatar)",
-      "\t\t\tq-avatar(color='${3:primary}', text-color='${4:white}', icon='${5:bluetooth}')",
-      "\t\tq-item-section ${6:Icons only}"
-    ],
-    "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
   },
   "QSpace": {
     "prefix": "qspace",

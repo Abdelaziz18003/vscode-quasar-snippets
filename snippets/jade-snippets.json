@@ -523,6 +523,15 @@
     ],
     "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
   },
+  "QSlideTransition": {
+    "prefix": "qslidetransition",
+    "body": [
+      "q-slide-transition",
+      "\tdiv(v-show='visible')",
+      "\t\timg.responsive(src='https://cdn.quasar.dev/img/quasar.jpg')"
+    ],
+    "description": "QSlideTransition slides the DOM element (or component) up or down, based on its visibility: works alongside v-show and v-if on a single element, similar to Vue’s Transition component with the only difference being that it’s not a group transition too (it only applies to one DOM element or component)."
+  },
   "QToolbar": {
     "prefix": "qtoolbar",
     "body": [

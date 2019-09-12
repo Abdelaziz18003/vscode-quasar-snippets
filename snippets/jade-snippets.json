@@ -553,6 +553,16 @@
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place. It is an important UX feature, which gives the user the feeling the system is continuing to work for longer term activities, like grabbing data from the server or some heavy calculations."
   },
+  "QSplitter": {
+    "prefix": "qsplitter",
+    "body": [
+      "q-splitter(v-model='${1:splitterModel}', style='${2:height: 400px}', ${3:horizontal})",
+      "\ttemplate(v-slot:before)",
+      "\ttemplate(v-slot:separator)",
+      "\ttemplate(v-slot:after)"
+    ],
+    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -718,16 +728,6 @@
       "q-video(src='${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}', style=':width: ${2:853px}; height: ${3:480px}')"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QSplitter": {
-    "prefix": "qsplitter",
-    "body": [
-      "q-splitter(v-model='${1:splitterModel}', style='${2:height: 400px}', ${3:horizontal})",
-      "\ttemplate(v-slot:before)",
-      "\ttemplate(v-slot:separator)",
-      "\ttemplate(v-slot:after)"
-    ],
-    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
   },
   "QTabPanels": {
     "prefix": "qtabpanels",

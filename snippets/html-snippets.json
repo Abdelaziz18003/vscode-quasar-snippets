@@ -763,6 +763,27 @@
     ],
     "description": "A Spinner is used to show the user a timely process is currently taking place. It is an important UX feature, which gives the user the feeling the system is continuing to work for longer term activities, like grabbing data from the server or some heavy calculations."
   },
+  "QSplitter": {
+    "prefix": "qsplitter",
+    "body": [
+      "<q-splitter",
+      "\tv-model=\"${1:splitterModel}\"",
+      "\tstyle=\"${2:height: 400px}\"",
+      "\t${3:horizontal}",
+      ">",
+      "\t<template v-slot:before>",
+      "\t\t$4",
+      "\t</template>",
+      "\t<template v-slot:separator>",
+      "\t\t<q-avatar color=\"primary\" text-color=\"white\" size=\"40px\" icon=\"drag_indicator\" />",
+      "\t</template>",
+      "\t<template v-slot:after>",
+      "\t\t$5",
+      "\t</template>",
+      "</q-splitter>"
+    ],
+    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -990,27 +1011,6 @@
       "/>"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QSplitter": {
-    "prefix": "qsplitter",
-    "body": [
-      "<q-splitter",
-      "\tv-model=\"${1:splitterModel}\"",
-      "\tstyle=\"${2:height: 400px}\"",
-      "\t${3:horizontal}",
-      ">",
-      "\t<template v-slot:before>",
-      "\t\t$4",
-      "\t</template>",
-      "\t<template v-slot:separator>",
-      "\t\t<q-avatar color=\"primary\" text-color=\"white\" size=\"40px\" icon=\"drag_indicator\" />",
-      "\t</template>",
-      "\t<template v-slot:after>",
-      "\t\t$5",
-      "\t</template>",
-      "</q-splitter>"
-    ],
-    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
   },
   "QTabPanels": {
     "prefix": "qtabpanels",

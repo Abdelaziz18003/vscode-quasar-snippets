@@ -911,6 +911,31 @@
     ],
     "description": "The QTooltip component is to be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the tooltip will appear."
   },
+  "QTree": {
+    "prefix": "qtree",
+    "body": [
+      "<q-tree",
+      "\t:nodes=\"${1:simple}\"",
+      "\tnode-key=\"${2:label}\"",
+      "\t:expanded.sync=\"${3:expanded}\"",
+      "\t${4:dark}",
+      "/>"
+    ],
+    "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
+  },
+  "QUploader": {
+    "prefix": "quploader",
+    "body": [
+      "<q-uploader",
+      "\turl=\"${1:http://localhost:4444/upload}\"",
+      "\tcolor=\"${2:teal}\"",
+      "\t${3:flat}",
+      "\t${4:bordered}",
+      "\tstyle=\"${5:max-width: 300px}\"",
+      "/>"
+    ],
+    "description": "Quasar supplies a way for you to upload files through the QUploader component."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -982,13 +1007,6 @@
     ],
     "description": "A component that offers the user an input field with additional features for searching purposes."
   },
-  "QUploader": {
-    "prefix": "quploader",
-    "body": [
-      "<q-uploader :url=\"${1:url}\" />"
-    ],
-    "description": "Quasar supplies a way for you to upload files through QUploader component."
-  },
   "QCollapsible": {
     "prefix": "qcollapsible",
     "body": [
@@ -1022,18 +1040,6 @@
       "</q-stepper-navigation>"
     ],
     "description": "QStepperNavigation is a helper for encapsulating Stepper navigation buttons (within QStep or globally for the stepper as direct child of QStepper)"
-  },
-  "QTree": {
-    "prefix": "qtree",
-    "body": [
-      "<q-tree",
-      "\t:nodes=\"${1:simple}\"",
-      "\tnode-key=\"${2:label}\"",
-      "\t:expanded.sync=\"${3:expanded}\"",
-      "\t${4:dark}",
-      "/>"
-    ],
-    "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
   },
   "QActionSheet": {
     "prefix": "qactionsheet",

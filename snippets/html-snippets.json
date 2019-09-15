@@ -846,6 +846,26 @@
     ],
     "description": "Tabs are a way of displaying more information using less window real estate."
   },
+  "QTabPanels": {
+    "prefix": "qtabpanels",
+    "body": [
+      "<q-tab-panels v-model=\"${1:tab}\" animated>",
+      "\t<q-tab-panel name=\"${2:mails}\">",
+      "\t\t<div class=\"text-h6\">${3:Mails}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "\t<q-tab-panel name=\"${4:alarms}\">",
+      "\t\t<div class=\"text-h6\">${5:Alarms}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "\t<q-tab-panel name=\"${6:movies}\">",
+      "\t\t<div class=\"text-h6\">${7:Movies}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "</q-tab-panels>"
+    ],
+    "description": "Tab panels are a way of displaying more information using less window real estate."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -1037,21 +1057,5 @@
       "/>"
     ],
     "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
-  },
-  "QTabPanels": {
-    "prefix": "qtabpanels",
-    "body": [
-      "<q-tab-panels v-model=\"${1:panel}\" animated class=\"shadow-2 rounded-borders\">",
-      "  <q-tab-panel name=\"${2:mails}\">",
-      "    <div class=\"text-h6\">Mails</div>",
-      "    Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "  </q-tab-panel>",
-      "  <q-tab-panel name=\"${3:alarms}\">",
-      "    <div class=\"text-h6\">Alarms</div>",
-      "    Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "  </q-tab-panel>",
-      "</q-tab-panels>"
-    ],
-    "description": "Tab panels are a way of displaying more information using less window real estate."
   }
 }

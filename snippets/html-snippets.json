@@ -1029,6 +1029,8 @@
       "<q-tree",
       "\t:nodes=\"${1:simple}\"",
       "\tnode-key=\"${2:label}\"",
+      "\t:expanded.sync=\"${3:expanded}\"",
+      "\t${4:dark}",
       "/>"
     ],
     "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."

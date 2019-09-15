@@ -724,7 +724,7 @@
   "QTree": {
     "prefix": "qtree",
     "body": [
-      "q-tree(:nodes='${1:simple}', node-key='${2:label}')"
+      "q-tree(:nodes='${1:simple}', node-key='${2:label}', :expanded.sync='${3:expanded}', ${4:dark})"
     ],
     "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
   },

@@ -784,6 +784,42 @@
     ],
     "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
   },
+  "QStepper": {
+    "prefix": "qstepper",
+    "body": [
+      "<q-stepper",
+      "  v-model=\"${1:step}\"",
+      "  ref=\"${2:stepper}\"",
+      "  color=\"${3:primary}\"",
+      "  ${4:animated}",
+      ">",
+      "  <q-step",
+      "    :name=\"${5:1}\"",
+      "    title=\"${6:Select campaign settings}\"",
+      "    icon=\"${7:settings}\"",
+      "    :done=\"${8:step > 1}\"",
+      "  >",
+      "    For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.",
+      "  </q-step>",
+      "  <q-step",
+      "    :name=\"${9:2}\"",
+      "    title=\"${10:Create an ad group}\"",
+      "    caption=\"${11:Optional}\"",
+      "    icon=\"${12:create_new_folder}\"",
+      "    :done=\"${13:step > 2}\"",
+      "  >",
+      "    An ad group contains one or more ads which target a shared set of keywords.",
+      "  </q-step>",
+      "  <template v-slot:navigation>",
+      "    <q-stepper-navigation>",
+      "      <q-btn @click=\"$refs.stepper.next()\" color=\"primary\" :label=\"step === 2 ?'Finish' : 'Continue'\" />",
+      "      <q-btn v-if=\"step > 1\" flat color=\"primary\" @click=\"$refs.stepper.previous()\" label=\"Back\" class=\"q-ml-sm\" />",
+      "    </q-stepper-navigation>",
+      "  </template>",
+      "</q-stepper>"
+    ],
+    "description": "A Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps. They may also be used for navigation. It’s usually useful when the user has to follow steps to complete a process."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -901,20 +937,6 @@
       "<q-window-resize-observable @resize=\"${1:onResize}\" />$0"
     ],
     "description": "A component that emits a resize event whenever the document viewport (window) changes its size"
-  },
-  "QStepper": {
-    "prefix": "qstepper",
-    "body": [
-      "<q-stepper ref=\"${1:stepper}\">",
-      "\t<q-step default title=\"${2:First Step}\" subtitle=\"${3:Here we go}\">",
-      "\t\t${4:step 1 content}",
-      "\t</q-step>",
-      "\t<q-step title=\"${5:Step 2}\" subtitle=\"${6:Review and submit}\">",
-      "\t\t${7:step 2 content}",
-      "\t</q-step>",
-      "</q-stepper>"
-    ],
-    "description": "Quasar Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps."
   },
   "QStepperNavigation": {
     "prefix": "qsteppernavigation",

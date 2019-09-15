@@ -945,6 +945,30 @@
     ],
     "description": "Using the QVideo component makes embedding a video like Youtube easy. It also resizes to fit the container by default."
   },
+  "QVirtualScroll": {
+    "prefix": "qvirtualscroll",
+    "body": [
+      "<q-virtual-scroll",
+      "\tstyle=\"max-height: 300px;\"",
+      "\t:items=\"${1:heavyList}\"",
+      "\t${2:separator}",
+      ">",
+      "\t<template v-slot=\"{ item, index }\">",
+      "\t\t<q-item",
+      "\t\t\t:key=\"index\"",
+      "\t\t\tdense",
+      "\t\t>",
+      "\t\t\t<q-item-section>",
+      "\t\t\t\t<q-item-label>",
+      "\t\t\t\t\t#{{ index }} - {{ item.label }}",
+      "\t\t\t\t</q-item-label>",
+      "\t\t\t</q-item-section>",
+      "\t\t</q-item>",
+      "\t</template>",
+      "</q-virtual-scroll>"
+    ],
+    "description": "The QVirtualScroll component allows you to display only a part of a long list of items and update the visible items as the user scrolls in the container. This has several advantages: only visible items are rendered, so the smallest number of nodes are in the DOM tree at any given point in time and the memory consumption is kept at its lowest."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [

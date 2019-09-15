@@ -737,14 +737,6 @@
     ],
     "description": "QSlideTransition slides the DOM element (or component) up or down, based on its visibility: works alongside v-show and v-if on a single element, similar to Vue’s Transition component with the only difference being that it’s not a group transition too (it only applies to one DOM element or component)."
   },
-
-  "QToolbar": {
-    "prefix": "qtoolbar",
-    "body": [
-      "<q-toolbar color=\"${1:primary}\">$0</q-toolbar>"
-    ],
-    "description": "A Quasar Layout can have headers and/or footers (also called “marginals”) and this is a great place to use Toolbars, but note that you can also place Toolbars anywhere else you want. One QToolbar will represent a row in your marginals, usually used for navigation buttons and a title (but not limited to only this)."
-  },
   "QSpace": {
     "prefix": "qspace",
     "body": [
@@ -866,15 +858,6 @@
     ],
     "description": "Tab panels are a way of displaying more information using less window real estate."
   },
-  "QToolbarTitle": {
-    "prefix": "qtoolbartitle",
-    "body": [
-      "<q-toolbar-title>",
-      "\t$0",
-      "</q-toolbar-title>"
-    ],
-    "description": "Used to wrap the “title” of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
-  },
   "QTimeline": {
     "prefix": "qtimeline",
     "body": [
@@ -904,6 +887,29 @@
       "</q-timeline>"
     ],
     "description": "The QTimeline component displays a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates alongside itself and usually events. Timelines can use any time scale, depending on the subject and data."
+  },
+  "QToolbar": {
+    "prefix": "qtoolbar",
+    "body": [
+      "<q-toolbar class=\"bg-${1:purple} text-${2:white}\">",
+      "\t<q-btn flat round dense icon=\"${3:assignment_ind}\" />",
+      "\t<q-toolbar-title>",
+      "\t\t${4:Toolbar}",
+      "\t</q-toolbar-title>",
+      "\t<q-btn flat round dense icon=\"${5:apps}\" class=\"q-mr-xs\" />",
+      "\t<q-btn flat round dense icon=\"${6:more_vert}\" />",
+      "</q-toolbar>"
+    ],
+    "description": "QToolbar is a component usually part of Layout Header and Footer, but it can be used anywhere on the page."
+  },
+  "QToolbarTitle": {
+    "prefix": "qtoolbartitle",
+    "body": [
+      "<q-toolbar-title>",
+      "\t$0",
+      "</q-toolbar-title>"
+    ],
+    "description": "Used to wrap the “title” of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
   },
   "QTab": {
     "prefix": "qtab",

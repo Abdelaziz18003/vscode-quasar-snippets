@@ -643,6 +643,13 @@
     ],
     "description": "Quasar supplies a way for you to upload files through the QUploader component."
   },
+  "QVideo": {
+    "prefix": "qvideo",
+    "body": [
+      "q-video(src='${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}')"
+    ],
+    "description": "Using the QVideo component makes embedding a video like Youtube easy. It also resizes to fit the container by default."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -755,12 +762,5 @@
       "q-progress(:percentage='${1:progressBuffer}', :buffer='${2:buffer}', style='${3:height: 4px}')"
     ],
     "description": "A Progress bar is used to show a process is being worked on, so the user isn’t staring at a static page, even though the system is working in the background."
-  },
-  "QVideo": {
-    "prefix": "qvideo",
-    "body": [
-      "q-video(src='${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}', style=':width: ${2:853px}; height: ${3:480px}')"
-    ],
-    "description": "Embedding a video like Youtube is easy. It also resizes to fit the container by default."
   }
 }

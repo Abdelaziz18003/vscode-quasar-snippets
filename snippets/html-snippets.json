@@ -832,6 +832,20 @@
     ],
     "description": "QTable is a component that allows you to display data in a tabular manner. It’s generally called a datatable."
   },
+  "QTabs": {
+    "prefix": "qtabs",
+    "body": [
+      "<q-tabs",
+      "\tv-model=\"${1:tab}\"",
+      "\tclass=\"${2:text-teal}\"",
+      ">",
+      "\t<q-tab name=\"${3:mails}\" icon=\"${4:mail}\" label=\"${5:Mails}\" />",
+      "\t<q-tab name=\"${6:alarms}\" icon=\"${7:alarm}\" label=\"${8:Alarms}\" />",
+      "\t<q-tab name=\"${9:movies}\" icon=\"${10:movie}\" label=\"${11:Movies}\" />",
+      "</q-tabs>"
+    ],
+    "description": "Tabs are a way of displaying more information using less window real estate."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -840,16 +854,6 @@
       "</q-toolbar-title>"
     ],
     "description": "Used to wrap the “title” of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
-  },
-  "QTabs": {
-    "prefix": "qtabs",
-    "body": [
-      "<q-tabs>",
-      "\t<q-tab slot=\"${1:slot}\" name=\"${2:name}\" label=\"${3:label}\"/>",
-      "\t<q-tab-pane name=\"${4:name}\">$0</q-tab-pane>",
-      "</q-tabs>"
-    ],
-    "description": "Quasar Tabs are a way of displaying more information using less window real estate."
   },
   "QTab": {
     "prefix": "qtab",

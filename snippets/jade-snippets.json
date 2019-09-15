@@ -622,6 +622,13 @@
     ],
     "description": "QToolbar is a component usually part of Layout Header and Footer, but it can be used anywhere on the page."
   },
+  "QTooltip": {
+    "prefix": "qtooltip",
+    "body": [
+      "q-tooltip(v-model='${1:showing}') $0"
+    ],
+    "description": "The QTooltip component is to be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the tooltip will appear."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -741,13 +748,6 @@
       "q-popover(v-model='${1:showing}') $0"
     ],
     "description": "QPopover should be used when you want a menu (or any content) to be displayed on a popup as a result of user clicking/tapping on a DOM element / component."
-  },
-  "QTooltip": {
-    "prefix": "qtooltip",
-    "body": [
-      "q-tooltip(v-model='${1:showing}') $0"
-    ],
-    "description": "QTooltip should be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the Tooltip will appear."
   },
   "QProgress": {
     "prefix": "qprogress",

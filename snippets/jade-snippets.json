@@ -573,6 +573,13 @@
     ],
     "description": "A Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps. They may also be used for navigation. It’s usually useful when the user has to follow steps to complete a process."
   },
+  "QTable": {
+    "prefix": "qtable",
+    "body": [
+      "q-table(title='${1:Table Title}', :data='${2:data}', :columns='${3:columns}', row-key='${4:name}')"
+    ],
+    "description": "QTable is a component that allows you to display data in a tabular manner. It’s generally called a datatable."
+  },
   "QToolbarTitle": {
     "prefix": "qtoolbartitle",
     "body": [
@@ -657,13 +664,6 @@
       "\tdiv $0"
     ],
     "description": "Quasar Collapsibles allow the hiding of content that is not immediately relevant to the user. Think of them as accordion elements that expand when clicked on."
-  },
-  "QTable": {
-    "prefix": "qtable",
-    "body": [
-      "q-table(title='${1:Table Title}', :data='${2:tableData}', :columns='${3:columns}', row-key='${4:name}')"
-    ],
-    "description": "QTable is a Component that allows you to display data in a tabular manner."
   },
   "QWindowResizeObservable": {
     "prefix": "qwindowresizeobservable",

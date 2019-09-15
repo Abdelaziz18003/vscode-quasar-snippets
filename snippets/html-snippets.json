@@ -875,6 +875,36 @@
     ],
     "description": "Used to wrap the “title” of your Toolbar. It spreads horizontally to the full real estate space it can get. If not enough space to cover the full extent of the content then ending ellipsis are used."
   },
+  "QTimeline": {
+    "prefix": "qtimeline",
+    "body": [
+      "<q-timeline color=\"secondary\" layout=\"dense\">",
+      "\t<q-timeline-entry heading>",
+      "\t\tTimeline heading",
+      "\t</q-timeline-entry>",
+      "\t<q-timeline-entry",
+      "\t\ttitle=\"Event Title\"",
+      "\t\tsubtitle=\"February 22, 1986\"",
+      "\t\tavatar=\"https://cdn.quasar.dev/img/avatar2.jpg\"",
+      "\t>",
+      "\t\t<div>",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "\t\t</div>",
+      "\t</q-timeline-entry>",
+      "\t<q-timeline-entry",
+      "\t\ttitle=\"Event Title\"",
+      "\t\tsubtitle=\"February 22, 1986\"",
+      "\t\tcolor=\"orange\"",
+      "\t\ticon=\"done_all\"",
+      "\t>",
+      "\t\t<div>",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "\t\t</div>",
+      "\t</q-timeline-entry>",
+      "</q-timeline>"
+    ],
+    "description": "The QTimeline component displays a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates alongside itself and usually events. Timelines can use any time scale, depending on the subject and data."
+  },
   "QTab": {
     "prefix": "qtab",
     "body": [

@@ -2,7 +2,7 @@
 	"name": "quasar-snippets",
 	"displayName": "Quasar Snippets",
 	"description": "vscode snippets for quasar-framework ",
-	"version": "0.6.0",
+	"version": "1.0.0",
 	"publisher": "abdelaziz18003",
 	"repository": {
 		"type": "git",

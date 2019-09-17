@@ -4,6 +4,31 @@ All notable changes to the "quasar-snippets" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.0] - 2019-09-17
+
+### added
+
+- add QVirtualScroll component
+- add QNoSsr component
+- add QMenu component
+
+### changed
+
+- update QVideo component
+- update QUploader component
+- update QTree component
+- update QTooltip component
+- update QRating component
+- update QPullToRefresh component
+- update QPopupEdit component
+- update QParallax component
+- update QResizeObservable & QScrollObservable
+
+### deleted
+
+- delete old v0.17.x components
+
+
 ## [0.6.0] - 2019-09-06
 
 ### added

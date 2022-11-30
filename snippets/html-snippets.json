@@ -817,7 +817,7 @@
     "body": [
       "<q-table",
       "\ttitle=\"${1:Table Title}\"",
-      "\t:data=\"${2:data}\"",
+      "\t:rows=\"${2:rows}\"",
       "\t:columns=\"${3:columns}\"",
       "\trow-key=\"${4:name}\"",
       "/>"
